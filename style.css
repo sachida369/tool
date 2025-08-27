@@ -1,11 +1,53 @@
-/* Directory Block */
+/* ===== General ===== */
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  color: #111;
+  line-height: 1.6;
+}
+
+.masthead {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0.5rem;
+  letter-spacing: 1px;
+}
+
+/* ===== News Ticker ===== */
+.ticker-wrap {
+  width: 100%;
+  overflow: hidden;
+  background: #222;
+  border-top: 3px solid #ffcc00;
+  border-bottom: 3px solid #ffcc00;
+  color: #fff;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.ticker {
+  display: inline-block;
+  padding-left: 100%;
+  animation: ticker 18s linear infinite;
+}
+
+.ticker span {
+  padding: 10px 2rem;
+  display: inline-block;
+}
+
+@keyframes ticker {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* ===== Blocks ===== */
 .block {
-  margin-bottom: 1.5rem;
   border: 1px solid #ccc;
   background: #fff;
 }
 
-/* Headline style */
 .headline {
   font-size: 1rem;
   font-weight: bold;
@@ -15,18 +57,21 @@
   text-transform: uppercase;
 }
 
-/* Directory link box */
+.block-content {
+  padding: 0;
+}
+
+/* ===== Directory Style Links ===== */
 .tool-btn {
-  display: block;               /* full width row */
+  display: block;
   width: 100%;
   padding: 10px 12px;
-  margin: 0;                    /* remove gaps */
   border-bottom: 1px solid #ddd;
   background: #fafafa;
-  text-decoration: none;
   font-size: 0.9rem;
+  text-decoration: none;
   color: #111;
-  text-align: left;             /* align like directory */
+  text-align: left;
   transition: background 0.2s ease-in-out;
 }
 
@@ -35,30 +80,17 @@
   color: #fff;
 }
 
-/* Remove last border in each block */
-.block-content .tool-btn:last-child {
+.tool-btn:last-child {
   border-bottom: none;
 }
 
-/* For list-style blocks (like software) */
-.block-content ul {
-  list-style: none;
+/* ===== Footer ===== */
+footer {
+  background: #f9f9f9;
+  color: #333;
+  border-top: 4px solid #000;
+}
+
+footer p {
   margin: 0;
-  padding: 0;
-}
-
-.block-content li {
-  border-bottom: 1px solid #ddd;
-}
-
-.block-content li a {
-  display: block;
-  padding: 10px 12px;
-  color: #111;
-  text-decoration: none;
-}
-
-.block-content li a:hover {
-  background: #111;
-  color: #fff;
 }
