@@ -14,145 +14,121 @@
     <div class="flex flex-col md:flex-row justify-between items-center text-sm mb-2">
       <span id="date" class="mb-1 md:mb-0"></span>
       <span class="italic">The Digital Gazette for Government Employees</span>
-      <input id="search" type="text" placeholder="Search..." class="px-2 py-1 border rounded text-black mt-1 md:mt-0">
+      <input id="search" type="text" placeholder="Search..." class="px-2 py-1 border text-black mt-1 md:mt-0">
     </div>
-    <div class="masthead text-xl font-bold text-center">Ek-Drishti GovTool</div>
+    <div class="masthead">Ek-Drishti GovTool</div>
     <div class="text-center my-2">
       <img src="assets/header-banner-ad.jpg" alt="Header Banner" class="mx-auto w-full max-h-40 object-cover">
     </div>
   </header>
 
-  <!-- Ticker -->
-  <div class="bg-yellow-200 py-2 px-4">
-    <marquee>DA Hike 4% • PFMS downtime • HRMS new features • GST emSigner updated • DigiLocker hits 50M users</marquee>
+  <!-- News Ticker -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>DA Hike 4% • PFMS downtime • HRMS new features • GST emSigner updated • DigiLocker hits 50M users • Income Tax portal new ITR form released • NIC VPN upgrade notice • Railways HRMS update live • Aadhaar seeding deadline extended</span>
+    </div>
   </div>
 
-  <!-- Main Content -->
-  <div class="mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 mt-4 px-4">
+  <!-- Main Content - 4 Columns -->
+  <div class="w-full grid grid-cols-1 md:grid-cols-4 gap-4 mt-4 px-4">
 
-    <!-- LEFT COLUMN 1 -->
-    <div>
-      <!-- Official Portals -->
-      <div class="block">
-        <h2 class="headline">Official Portals</h2>
-        <img src="assets/official-portals.jpg" alt="Official Portals" class="w-full">
-        <div class="block-content">
-          <a href="https://pfms.nic.in" target="_blank" class="tool-btn">PFMS</a>
-          <a href="https://hrms.indianrail.gov.in" target="_blank" class="tool-btn">HRMS (Railways)</a>
-          <a href="https://ireps.gov.in" target="_blank" class="tool-btn">IREPS</a>
-          <a href="https://gem.gov.in" target="_blank" class="tool-btn">GeM</a>
-          <a href="https://eprocure.gov.in" target="_blank" class="tool-btn">CPPP</a>
-          <a href="https://sparrow.eoffice.gov.in" target="_blank" class="tool-btn">SPARROW</a>
-          <a href="https://eoffice.gov.in" target="_blank" class="tool-btn">eOffice</a>
-          <a href="https://digilocker.gov.in" target="_blank" class="tool-btn">DigiLocker</a>
-          <a href="https://uidai.gov.in" target="_blank" class="tool-btn">UIDAI</a>
-          <a href="https://irctc.co.in" target="_blank" class="tool-btn">IRCTC</a>
-          <a href="https://rbi.org.in" target="_blank" class="tool-btn">RBI</a>
-          <a href="https://sebi.gov.in" target="_blank" class="tool-btn">SEBI</a>
-          <a href="https://epfindia.gov.in" target="_blank" class="tool-btn">EPFO</a>
-          <a href="https://npci.org.in" target="_blank" class="tool-btn">NPCI</a>
-          <a href="https://gst.gov.in" target="_blank" class="tool-btn">GST</a>
-          <a href="https://www.mca.gov.in/mca21/" target="_blank" class="tool-btn">MCA21</a>
-          <a href="https://icegate.gov.in" target="_blank" class="tool-btn">ICEGATE</a>
-          <a href="https://pgportal.gov.in" target="_blank" class="tool-btn">CPGRAMS</a>
-          <a href="https://eprocure.gov.in/epublish/app" target="_blank" class="tool-btn">GePNIC</a>
-          <a href="https://parivahan.gov.in" target="_blank" class="tool-btn">Vahan / Sarathi</a>
-        </div>
-      </div>
-
-      <!-- Daily Tools -->
-      <div class="block">
-        <h2 class="headline">Daily Tools</h2>
-        <img src="assets/images/daily-tools.jpg" alt="Daily Tools" class="w-full">
-        <div class="block-content">
-          <a href="https://ilovepdf.com/merge_pdf" target="_blank" class="tool-btn">PDF Merge</a>
-          <a href="https://smallpdf.com/compress-pdf" target="_blank" class="tool-btn">PDF Compress</a>
-          <a href="https://app.prntscr.com" target="_blank" class="tool-btn">Screenshot Tool</a>
-        </div>
+    <!-- Column 1 -->
+    <div class="block">
+      <h2 class="headline">Official Portals</h2>
+      <div class="block-content">
+        <a href="https://pfms.nic.in" target="_blank" class="tool-btn">PFMS</a>
+        <a href="https://hrms.indianrail.gov.in" target="_blank" class="tool-btn">HRMS (Railways)</a>
+        <a href="https://ireps.gov.in" target="_blank" class="tool-btn">IREPS</a>
+        <a href="https://gem.gov.in" target="_blank" class="tool-btn">GeM</a>
+        <a href="https://eprocure.gov.in" target="_blank" class="tool-btn">CPPP</a>
+        <a href="https://sparrow.eoffice.gov.in" target="_blank" class="tool-btn">SPARROW</a>
+        <a href="https://eoffice.gov.in" target="_blank" class="tool-btn">eOffice</a>
+        <a href="https://digilocker.gov.in" target="_blank" class="tool-btn">DigiLocker</a>
+        <a href="https://uidai.gov.in" target="_blank" class="tool-btn">UIDAI</a>
+        <a href="https://irctc.co.in" target="_blank" class="tool-btn">IRCTC</a>
+        <a href="https://rbi.org.in" target="_blank" class="tool-btn">RBI</a>
+        <a href="https://sebi.gov.in" target="_blank" class="tool-btn">SEBI</a>
+        <a href="https://epfindia.gov.in" target="_blank" class="tool-btn">EPFO</a>
+        <a href="https://npci.org.in" target="_blank" class="tool-btn">NPCI</a>
+        <a href="https://gst.gov.in" target="_blank" class="tool-btn">GST</a>
+        <a href="https://www.mca.gov.in/mca21/" target="_blank" class="tool-btn">MCA21</a>
+        <a href="https://icegate.gov.in" target="_blank" class="tool-btn">ICEGATE</a>
+        <a href="https://pgportal.gov.in" target="_blank" class="tool-btn">CPGRAMS</a>
+        <a href="https://eprocure.gov.in/epublish/app" target="_blank" class="tool-btn">GePNIC</a>
+        <a href="https://parivahan.gov.in" target="_blank" class="tool-btn">Vahan / Sarathi</a>
       </div>
     </div>
 
-    <!-- CENTER COLUMN 2 -->
-    <div>
-      <!-- Office Utility Tools -->
-      <div class="block">
-        <h2 class="headline">Office Utility Tools</h2>
-        <img src="assets/office-tools.jpg" alt="Office Tools" class="w-full">
-        <div class="block-content text-sm space-y-2">
-          <!-- only unique entries kept -->
-          <div class="border-b pb-1"><a href="https://ilovepdf.com" target="_blank" class="text-blue-600">ILovePDF</a> – Merge, split, compress PDFs</div>
-          <div class="border-b pb-1"><a href="https://smallpdf.com" target="_blank" class="text-blue-600">SmallPDF</a> – Convert Word/Excel ↔ PDF</div>
-          <div class="border-b pb-1"><a href="https://sejda.com" target="_blank" class="text-blue-600">Sejda PDF</a> – Edit & sign PDFs</div>
-          <div class="border-b pb-1"><a href="https://tools.pdf24.org" target="_blank" class="text-blue-600">PDF24 Tools</a> – Free PDF kit</div>
-          <div class="border-b pb-1"><a href="https://remove.bg" target="_blank" class="text-blue-600">Remove.bg</a> – Remove image backgrounds</div>
-          <div class="border-b pb-1"><a href="https://tinypng.com" target="_blank" class="text-blue-600">TinyPNG</a> – Image size reducer</div>
-        </div>
-      </div>
-
-      <!-- Realtime -->
-      <div class="block">
-        <h2 class="headline">Live Status & Realtime Services</h2>
-        <img src="assets/realtime-services.jpg" alt="Realtime" class="w-full">
-        <div class="block-content space-y-2 text-sm">
-          <!-- your realtime links kept as is -->
-          <div class="tool-item"><a href="https://enquiry.indianrail.gov.in/ntes/" target="_blank" class="tool-btn">Train Running Status</a></div>
-          <div class="tool-item"><a href="https://www.indianrail.gov.in/enquiry/PNR" target="_blank" class="tool-btn">PNR Status Check</a></div>
-          <div class="tool-item"><a href="https://www.flightstats.com" target="_blank" class="tool-btn">Flight Status</a></div>
-          <div class="tool-item"><a href="https://www.indiapost.gov.in/vas/pages/trackconsignment.aspx" target="_blank" class="tool-btn">India Post Tracking</a></div>
-          <div class="tool-item"><a href="https://mausam.imd.gov.in" target="_blank" class="tool-btn">IMD Weather</a></div>
-        </div>
-      </div>
-
-      <!-- Finance -->
-      <div class="block">
-        <h2 class="headline">Finance & HR</h2>
-        <img src="assets/finance-hr.jpg" alt="Finance" class="w-full">
-        <div class="block-content space-y-2 text-sm">
-          <!-- finance links kept -->
-          <div class="tool-item"><a href="https://www.gconnect.in/online-calculators/da-ta-calculator" target="_blank" class="tool-btn">DA/TA Calculator</a></div>
-          <div class="tool-item"><a href="https://incometaxindia.gov.in/pages/tools/tax-calculator.aspx" target="_blank" class="tool-btn">Income Tax Calculator</a></div>
-          <div class="tool-item"><a href="https://npscra.nsdl.co.in/nsdl-nps.php" target="_blank" class="tool-btn">GPF/NPS Calculator</a></div>
-        </div>
+    <!-- Column 2 -->
+    <div class="block">
+      <h2 class="headline">Software & Utilities</h2>
+      <div class="block-content">
+        <a href="https://auraiya.nic.in/eoffice-3/" target="_blank" class="tool-btn">DigitalSignerService (NIC eOffice)</a>
+        <a href="https://www.gst.gov.in/help/docsigner" target="_blank" class="tool-btn">emSigner (GST/MCA21)</a>
+        <a href="https://www.incometax.gov.in/iec/foportal/downloads/dsc-management-utility" target="_blank" class="tool-btn">emBridge (Income Tax DSC Utility)</a>
+        <a href="https://filesign.icegate.gov.in/" target="_blank" class="tool-btn">ICEGATE Signer Utility</a>
+        <a href="https://www.e-mudhra.com/Support/epass-token-drivers" target="_blank" class="tool-btn">DSC Token Drivers</a>
+        <a href="https://kavach.mail.gov.in" target="_blank" class="tool-btn">Kavach 2FA</a>
+        <a href="https://sandes.gov.in" target="_blank" class="tool-btn">Sandes Messenger</a>
+        <a href="https://digilocker.gov.in/install" target="_blank" class="tool-btn">DigiLocker Desktop</a>
+        <a href="https://webex.nic.in/download" target="_blank" class="tool-btn">NIC Webex</a>
+        <a href="https://vpn.nic.in/" target="_blank" class="tool-btn">NIC VPN</a>
+        <a href="https://get.adobe.com/reader/" target="_blank" class="tool-btn">Adobe Acrobat Reader</a>
+        <a href="https://tools.pdf24.org/en/creator" target="_blank" class="tool-btn">PDF24 Creator</a>
+        <a href="https://ilovepdf.com/download" target="_blank" class="tool-btn">ILovePDF Desktop</a>
+        <a href="https://www.sejda.com/desktop" target="_blank" class="tool-btn">Sejda PDF</a>
+        <a href="https://paymanager.rajasthan.gov.in/" target="_blank" class="tool-btn">PayManager</a>
+        <a href="https://pfms.nic.in/eLekhahome.aspx" target="_blank" class="tool-btn">e-Lekha / COMPACT</a>
+        <a href="https://web.umang.gov.in/" target="_blank" class="tool-btn">UMANG</a>
+        <a href="https://cleartax.in/download-app" target="_blank" class="tool-btn">ClearTax</a>
+        <a href="https://www.incometax.gov.in/iec/foportal/downloads" target="_blank" class="tool-btn">ITR Utilities</a>
+        <a href="https://anydesk.com/en/downloads" target="_blank" class="tool-btn">AnyDesk</a>
+        <a href="https://www.teamviewer.com/en/download" target="_blank" class="tool-btn">TeamViewer</a>
+        <a href="https://zoom.us/download" target="_blank" class="tool-btn">Zoom</a>
+        <a href="https://apps.google.com/meet/" target="_blank" class="tool-btn">Google Meet</a>
+        <a href="https://www.microsoft.com/en-in/microsoft-teams/download-app" target="_blank" class="tool-btn">Microsoft Teams</a>
+        <a href="https://www.office.com" target="_blank" class="tool-btn">MS Office 365</a>
+        <a href="https://www.libreoffice.org/download/download-libreoffice/" target="_blank" class="tool-btn">LibreOffice</a>
+        <a href="https://notepad-plus-plus.org/downloads/" target="_blank" class="tool-btn">Notepad++</a>
+        <a href="https://www.7-zip.org/download.html" target="_blank" class="tool-btn">7-Zip</a>
+        <a href="https://www.rarlab.com/download.htm" target="_blank" class="tool-btn">WinRAR</a>
       </div>
     </div>
 
-    <!-- RIGHT COLUMN 3 -->
-    <div>
-      <!-- Ads -->
-      <div class="block">
-        <h2 class="headline">Sponsored Ads</h2>
-        <img src="assets/sponsored-ads.jpg" alt="Ads" class="w-full">
-        <div class="block-content">
-          <div class="ad-box">160×600 Sidebar Ad</div>
-          <div class="ad-box mt-2">160×600 Sidebar Ad</div>
-        </div>
-      </div>
-
-      <!-- Communication 4 -->
-      <div class="block">
-        <h2 class="headline">Communication</h2>
-        <img src="assets/images/communication.jpg" alt="Communication" class="w-full">
-        <div class="block-content">
-          <a href="https://sandes.gov.in" target="_blank" class="tool-btn">Sandes</a>
-          <a href="https://mail.gov.in" target="_blank" class="tool-btn">NIC Mail</a>
-          <a href="https://kavach.mail.gov.in" target="_blank" class="tool-btn">Kavach 2FA</a>
-          <a href="https://webex.nic.in" target="_blank" class="tool-btn">NIC Webex</a>
-        </div>
-      </div>
-
-      <!-- Lost & Found 4 -->
-      <div class="block">
-        <h2 class="headline">Lost & Found</h2>
-        <img src="assets/images/lost-found.jpg" alt="Lost & Found" class="w-full">
-        <div class="block-content">
-          <form class="space-y-2 text-sm">
-            <input type="text" placeholder="Item" class="w-full border p-1 rounded">
-            <input type="text" placeholder="Contact" class="w-full border p-1 rounded">
-            <button class="bg-green-600 text-white px-3 py-1 rounded">Post</button>
-          </form>
-        </div>
+    <!-- Column 3 -->
+    <div class="block">
+      <h2 class="headline">Realtime & Daily Tools</h2>
+      <div class="block-content">
+        <a href="https://enquiry.indianrail.gov.in/ntes/" target="_blank" class="tool-btn">Train Running Status</a>
+        <a href="https://www.indianrail.gov.in/enquiry/PNR" target="_blank" class="tool-btn">PNR Status Check</a>
+        <a href="https://www.flightstats.com" target="_blank" class="tool-btn">Flight Status</a>
+        <a href="https://www.aai.aero/en" target="_blank" class="tool-btn">AAI Flight Info</a>
+        <a href="https://www.indiapost.gov.in/vas/pages/trackconsignment.aspx" target="_blank" class="tool-btn">India Post Tracking</a>
+        <a href="https://mausam.imd.gov.in" target="_blank" class="tool-btn">IMD Weather</a>
+        <a href="https://main.sci.gov.in/case-status" target="_blank" class="tool-btn">Supreme Court Case Status</a>
+        <a href="https://services.ecourts.gov.in" target="_blank" class="tool-btn">High/District Court Cases</a>
+        <a href="http://upbhulekh.gov.in/" target="_blank" class="tool-btn">UP Bhulekh Land Records</a>
+        <a href="https://dharani.telangana.gov.in" target="_blank" class="tool-btn">Telangana Land Records</a>
+        <a href="https://ilovepdf.com/merge_pdf" target="_blank" class="tool-btn">PDF Merge</a>
+        <a href="https://smallpdf.com/compress-pdf" target="_blank" class="tool-btn">PDF Compress</a>
+        <a href="https://app.prntscr.com" target="_blank" class="tool-btn">Screenshot Tool</a>
       </div>
     </div>
+
+    <!-- Column 4 -->
+    <div class="block">
+      <h2 class="headline">Finance & HR</h2>
+      <div class="block-content">
+        <a href="https://www.gconnect.in/online-calculators/da-ta-calculator" target="_blank" class="tool-btn">DA/TA Calculator</a>
+        <a href="https://incometaxindia.gov.in/pages/tools/tax-calculator.aspx" target="_blank" class="tool-btn">Income Tax Calculator</a>
+        <a href="https://npscra.nsdl.co.in/nsdl-nps.php" target="_blank" class="tool-btn">GPF/NPS Calculator</a>
+        <a href="https://paymanager.rajasthan.gov.in" target="_blank" class="tool-btn">Salary Slip Generator</a>
+        <a href="https://pfms.nic.in" target="_blank" class="tool-btn">PFMS Fund Tracking</a>
+        <a href="https://epfindia.gov.in" target="_blank" class="tool-btn">EPFO PF Balance</a>
+        <a href="https://esic.gov.in" target="_blank" class="tool-btn">ESIC Portal</a>
+      </div>
+    </div>
+
   </div>
 
   <!-- Footer -->
@@ -166,7 +142,7 @@
     search.addEventListener('input',function(){
       let v=this.value.toLowerCase();
       document.querySelectorAll('.tool-btn').forEach(b=>{
-        b.style.display=b.textContent.toLowerCase().includes(v)?"inline-block":"none";
+        b.style.display=b.textContent.toLowerCase().includes(v)?"block":"none";
       });
     });
   </script>
