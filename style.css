@@ -42,3 +42,23 @@ body {
   font-size:.9rem; color:#444;
 }
 marquee { font-weight:600; color:#b91c1c; }
+
+.tool-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.tool-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+}
+
