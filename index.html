@@ -2,6 +2,213 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GovHub India – Official Tools Portal</title>
+  <meta name="description" content="GovHub India: Single-page portal for Indian Government & PSU employees. Official portals, software downloads, realtime services, finance tools, news & circulars.">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .tool-btn { background: #fff; border-radius: .75rem; padding: .6rem .8rem; font-size: .85rem; font-weight: 600; text-align: center; transition: all .2s; box-shadow: 0 2px 6px rgba(0,0,0,.08); }
+    .tool-btn:hover { background: #2563eb; color: #fff; transform: scale(1.05); }
+    .ad-box { background:#f9fafb; border:2px dashed #cbd5e1; min-height:120px; display:flex; align-items:center; justify-content:center; color:#475569; font-size:.9rem; }
+    .glass-card { background: rgba(255,255,255,0.7); backdrop-filter: blur(10px); border-radius:1rem; box-shadow:0 4px 20px rgba(0,0,0,0.1); padding:1rem; }
+    /* Live search filter */
+    .hidden { display:none; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-700 text-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-3">
+      <h1 class="text-2xl font-bold">GovHub India</h1>
+      <input id="search" type="text" placeholder="🔍 Search tools, software, services..." class="w-full md:w-96 px-3 py-2 rounded text-black">
+      <nav class="space-x-3 text-sm font-medium">
+        <a href="#portals">Portals</a>
+        <a href="#emails">Emails</a>
+        <a href="#software">Software</a>
+        <a href="#realtime">Realtime</a>
+        <a href="#finance">Finance</a>
+        <a href="#news">News</a>
+        <a href="#buysell">Buy&Sell</a>
+        <a href="#guides">Guides</a>
+        <a href="#downloads">Downloads</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Top Ad Banner -->
+  <div class="ad-box max-w-7xl mx-auto my-2">728×90 / 970×250 Ad Banner</div>
+
+  <div class="max-w-7xl mx-auto px-4 py-6 grid lg:grid-cols-[1fr_200px] gap-6">
+    <!-- Main content -->
+    <main class="space-y-12">
+
+      <!-- Official Portals -->
+      <section id="portals">
+        <h2 class="text-xl font-bold mb-4">🔗 Official Portals</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+          <a href="https://pfms.nic.in" target="_blank" class="tool-btn">PFMS</a>
+          <a href="https://hrms.indianrail.gov.in" target="_blank" class="tool-btn">HRMS (Railways)</a>
+          <a href="https://ireps.gov.in" target="_blank" class="tool-btn">IREPS</a>
+          <a href="https://gem.gov.in" target="_blank" class="tool-btn">GeM</a>
+          <a href="https://eprocure.gov.in" target="_blank" class="tool-btn">CPPP</a>
+          <a href="https://sparrow.eoffice.gov.in" target="_blank" class="tool-btn">SPARROW</a>
+          <a href="https://eoffice.gov.in" target="_blank" class="tool-btn">eOffice</a>
+          <a href="https://digilocker.gov.in" target="_blank" class="tool-btn">DigiLocker</a>
+          <a href="https://uidai.gov.in" target="_blank" class="tool-btn">UIDAI</a>
+          <a href="https://irctc.co.in" target="_blank" class="tool-btn">IRCTC</a>
+          <!-- Add more official portals here -->
+        </div>
+      </section>
+
+      <!-- Email Logins -->
+      <section id="emails">
+        <h2 class="text-xl font-bold mb-4">📧 Official Email Logins</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+          <a href="https://mail.gov.in" target="_blank" class="tool-btn">NIC Mail</a>
+          <a href="#" class="tool-btn">RailNet Email</a>
+          <a href="https://up.gov.in" target="_blank" class="tool-btn">UP Gov Mail</a>
+          <a href="https://parliamentofindia.nic.in" target="_blank" class="tool-btn">Parliament Mail</a>
+        </div>
+      </section>
+
+      <!-- Software & Utilities -->
+      <section id="software">
+        <h2 class="text-xl font-bold mb-4">🖥️ Software & Utilities</h2>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="glass-card">
+            <h3 class="font-semibold">Digital Signature Tools</h3>
+            <ul class="list-disc ml-6 text-sm">
+              <li><a href="#" class="text-blue-600">DigitalSignerService v7.1.0</a></li>
+              <li><a href="#" class="text-blue-600">emSigner (GST/MCA21)</a></li>
+              <li><a href="#" class="text-blue-600">emBridge (Income Tax)</a></li>
+              <li><a href="#" class="text-blue-600">ICEGATE Signer Utility</a></li>
+            </ul>
+          </div>
+          <div class="glass-card">
+            <h3 class="font-semibold">Core Govt Software</h3>
+            <ul class="list-disc ml-6 text-sm">
+              <li>DigiLocker client</li>
+              <li>Kavach 2FA</li>
+              <li>Sandes App</li>
+              <li>PayManager / IFMS</li>
+              <li>E-Lekha / COMPACT</li>
+              <li>NIC Webex Client</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ad-box my-4">468×60 In-content Ad</div>
+      </section>
+
+      <!-- Realtime Services -->
+      <section id="realtime">
+        <h2 class="text-xl font-bold mb-4">📡 Realtime Services</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+          <a href="#" class="tool-btn">Train Live Status</a>
+          <a href="#" class="tool-btn">PNR Check</a>
+          <a href="#" class="tool-btn">Flight Status</a>
+          <a href="#" class="tool-btn">Weather Updates</a>
+          <a href="#" class="tool-btn">Pension Status</a>
+        </div>
+      </section>
+
+      <!-- Finance -->
+      <section id="finance">
+        <h2 class="text-xl font-bold mb-4">💰 Finance & HR Tools</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+          <a href="#" class="tool-btn">DA/TA Calculator</a>
+          <a href="#" class="tool-btn">Tax Calculator</a>
+          <a href="#" class="tool-btn">GPF/NPS Calculator</a>
+          <a href="#" class="tool-btn">Salary Slip Generator</a>
+        </div>
+      </section>
+
+      <!-- News -->
+      <section id="news">
+        <h2 class="text-xl font-bold mb-4">📰 News & Circulars</h2>
+        <marquee behavior="scroll" direction="left" class="bg-yellow-100 p-2 rounded">DA Hike announced • Railways HRMS update • PFMS servers maintenance • New IRCTC policy circular</marquee>
+        <div class="grid md:grid-cols-2 gap-4 mt-4">
+          <div class="glass-card">⚡ DA Hike 4% for Central Govt Employees</div>
+          <div class="glass-card">🚉 Railways launched new HRMS portal</div>
+        </div>
+      </section>
+
+      <!-- Buy & Sell -->
+      <section id="buysell">
+        <h2 class="text-xl font-bold mb-4">👥 Lost & Found / Buy & Sell</h2>
+        <form class="glass-card space-y-3">
+          <input type="text" placeholder="Item / Lost Report" class="w-full border p-2 rounded">
+          <input type="text" placeholder="Contact Info" class="w-full border p-2 rounded">
+          <button class="bg-green-600 text-white px-3 py-2 rounded">Post</button>
+        </form>
+      </section>
+
+      <!-- Guides -->
+      <section id="guides">
+        <h2 class="text-xl font-bold mb-4">📘 Guides & Manuals</h2>
+        <ul class="list-disc ml-6 text-sm">
+          <li><a href="#">DSC Signer Installation Guide</a></li>
+          <li><a href="#">VPN Setup Manual</a></li>
+          <li><a href="#">eOffice User Manual</a></li>
+        </ul>
+      </section>
+
+      <!-- Downloads -->
+      <section id="downloads">
+        <h2 class="text-xl font-bold mb-4">⬇️ Downloads Hub</h2>
+        <p class="text-sm">Browse 100+ govt software by category. (DSC Tools, HR/Finance, Procurement, Security)</p>
+      </section>
+
+      <!-- About -->
+      <section id="about">
+        <h2 class="text-xl font-bold mb-4">ℹ️ About Us</h2>
+        <p class="text-gray-700">GovHub India is an independent utility portal designed to simplify access to official tools, software, and services for Indian Government & PSU employees. <br><strong>Disclaimer:</strong> We are not affiliated with any official department.</p>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <h2 class="text-xl font-bold mb-4">📞 Contact Us</h2>
+        <form action="https://formspree.io/f/yourid" method="POST" class="space-y-3 glass-card">
+          <input type="text" name="name" placeholder="Your Name" class="w-full border p-2 rounded">
+          <input type="email" name="email" placeholder="Your Email" class="w-full border p-2 rounded">
+          <textarea name="message" placeholder="Your Message" class="w-full border p-2 rounded"></textarea>
+          <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Sidebar Ads -->
+    <aside class="space-y-4">
+      <div class="ad-box">160×600 Sidebar Ad</div>
+      <div class="ad-box">160×600 Sidebar Ad</div>
+    </aside>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-4 mt-8">
+    <p>&copy; 2025 GovHub India. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Search Filter Script -->
+  <script>
+    const search = document.getElementById('search');
+    search.addEventListener('input', function(){
+      let val = this.value.toLowerCase();
+      document.querySelectorAll('.tool-btn').forEach(btn=>{
+        btn.classList.toggle('hidden', !btn.textContent.toLowerCase().includes(val));
+      });
+    });
+  </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <title>GovHub India – PSU Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
