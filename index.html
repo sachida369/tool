@@ -3,555 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ek-Drishti – Official Tools Portal</title>
-  <meta name="description" content="Ek-Drishti: Single-page portal for Indian Government & PSU employees. Official portals, software downloads, realtime services, finance tools, news & circulars.">
+  <title>GovHub India – Digital Daily</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-    .tool-btn { background: #fff; border-radius: .75rem; padding: .6rem .8rem; font-size: .85rem; font-weight: 600; text-align: center; transition: all .2s; box-shadow: 0 2px 6px rgba(0,0,0,.08); }
-    .tool-btn:hover { background: #2563eb; color: #fff; transform: scale(1.05); }
-    .ad-box { background:#f9fafb; border:2px dashed #cbd5e1; min-height:120px; display:flex; align-items:center; justify-content:center; color:#475569; font-size:.9rem; }
-    .glass-card { background: rgba(255,255,255,0.7); backdrop-filter: blur(10px); border-radius:1rem; box-shadow:0 4px 20px rgba(0,0,0,0.1); padding:1rem; }
-    /* Live search filter */
-    .hidden { display:none; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body>
 
-  <!-- Header -->
-  <header class="bg-blue-700 text-white shadow sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-3">
-      <h1 class="text-2xl font-bold">Ek-Drishti</h1>
-      <input id="search" type="text" placeholder="🔍 Search tools, software, services..." class="w-full md:w-96 px-3 py-2 rounded text-black">
-      <nav class="space-x-3 text-sm font-medium">
-        <a href="#portals">Portals</a>
-        <a href="#emails">Emails</a>
-        <a href="#software">Software</a>
-        <a href="#realtime">Realtime</a>
-        <a href="#finance">Finance</a>
-        <a href="#news">News</a>
-        <a href="#buysell">Buy&Sell</a>
-        <a href="#guides">Guides</a>
-        <a href="#downloads">Downloads</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <!-- Masthead -->
+  <header class="py-4 px-6 border-b-4 border-black">
+    <div class="flex flex-col md:flex-row justify-between items-center text-sm mb-2">
+      <span id="date" class="mb-1 md:mb-0"></span>
+      <span class="italic">The Digital Gazette for Government Employees</span>
+      <input id="search" type="text" placeholder="Search..." class="px-2 py-1 border rounded text-black mt-1 md:mt-0">
+    </div>
+    <div class="masthead">GovHub India</div>
+    <div class="text-center my-2">
+      <div class="ad-box">728×90 / 970×250 Top Banner Ad</div>
     </div>
   </header>
 
-  <!-- Top Ad Banner -->
-  <div class="ad-box max-w-7xl mx-auto my-2">728×90 / 970×250 Ad Banner</div>
-
-  <div class="max-w-7xl mx-auto px-4 py-6 grid lg:grid-cols-[1fr_200px] gap-6">
-    <!-- Main content -->
-    <main class="space-y-12">
-
-      <!-- Official Portals -->
-      <section id="portals">
-        <h2 class="text-xl font-bold mb-4">🔗 Official Portals</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
-          <a href="https://pfms.nic.in" target="_blank" class="tool-btn">PFMS</a>
-          <a href="https://hrms.indianrail.gov.in" target="_blank" class="tool-btn">HRMS (Railways)</a>
-          <a href="https://ireps.gov.in" target="_blank" class="tool-btn">IREPS</a>
-          <a href="https://gem.gov.in" target="_blank" class="tool-btn">GeM</a>
-          <a href="https://eprocure.gov.in" target="_blank" class="tool-btn">CPPP</a>
-          <a href="https://sparrow.eoffice.gov.in" target="_blank" class="tool-btn">SPARROW</a>
-          <a href="https://eoffice.gov.in" target="_blank" class="tool-btn">eOffice</a>
-          <a href="https://digilocker.gov.in" target="_blank" class="tool-btn">DigiLocker</a>
-          <a href="https://uidai.gov.in" target="_blank" class="tool-btn">UIDAI</a>
-          <a href="https://irctc.co.in" target="_blank" class="tool-btn">IRCTC</a>
-          <!-- Add more official portals here -->
-        </div>
-      </section>
-
-      <!-- Email Logins -->
-      <section id="emails">
-        <h2 class="text-xl font-bold mb-4">📧 Official Email Logins</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
-          <a href="https://mail.gov.in" target="_blank" class="tool-btn">NIC Mail</a>
-          <a href="#" class="tool-btn">RailNet Email</a>
-          <a href="https://up.gov.in" target="_blank" class="tool-btn">UP Gov Mail</a>
-          <a href="https://parliamentofindia.nic.in" target="_blank" class="tool-btn">Parliament Mail</a>
-        </div>
-      </section>
-
-      <!-- Software & Utilities -->
-<section id="software">
-  <h2 class="text-xl font-bold mb-4">Software & Utilities</h2>
-  <div class="grid md:grid-cols-2 gap-4">
-
-    <!-- Digital Signature Tools -->
-    <div class="glass-card">
-      <h3 class="font-semibold">Digital Signature Tools</h3>
-      <ul class="list-disc ml-6 text-sm">
-        <li>
-          <a href="https://auraiya.nic.in/eoffice-3/" target="_blank" class="text-blue-600">
-            DigitalSignerService v7.1.0 (NIC eOffice)
-          </a>
-        </li>
-        <li>
-          <a href="https://www.gst.gov.in/help/docsigner" target="_blank" class="text-blue-600">
-            emSigner (GST / MCA21)
-          </a>
-        </li>
-        <li>
-          <a href="https://www.incometax.gov.in/iec/foportal/downloads/dsc-management-utility" target="_blank" class="text-blue-600">
-            emBridge (Income Tax)
-          </a>
-        </li>
-        <li>
-          <a href="https://filesign.icegate.gov.in/" target="_blank" class="text-blue-600">
-            ICEGATE Signer Utility
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Core Govt Software -->
-    <div class="glass-card">
-      <h3 class="font-semibold">Core Govt Software</h3>
-      <ul class="list-disc ml-6 text-sm">
-        <li>
-          <a href="https://digilocker.gov.in/" target="_blank" class="text-blue-600">
-            DigiLocker Client
-          </a>
-        </li>
-        <li>
-          <a href="https://kavach.mail.gov.in/" target="_blank" class="text-blue-600">
-            Kavach 2FA
-          </a>
-        </li>
-        <li>
-          <a href="https://sandes.gov.in/" target="_blank" class="text-blue-600">
-            Sandes App
-          </a>
-        </li>
-        <li>
-          <a href="https://paymanager.rajasthan.gov.in/" target="_blank" class="text-blue-600">
-            PayManager / IFMS
-          </a>
-        </li>
-        <li>
-          <a href="https://pfms.nic.in/eLekhahome.aspx" target="_blank" class="text-blue-600">
-            E-Lekha / COMPACT
-          </a>
-        </li>
-        <li>
-          <a href="https://webex.nic.in/download" target="_blank" class="text-blue-600">
-            NIC Webex Client
-          </a>
-        </li>
-      </ul>
-    </div>
+  <!-- Ticker -->
+  <div class="bg-yellow-200 py-2 px-4">
+    <marquee>DA Hike 4% • PFMS downtime • HRMS new features • GST emSigner updated • DigiLocker hits 50M users</marquee>
   </div>
 
-  <!-- In-content Ad -->
-  <div class="ad-box my-4">468×60 In-content Ad</div>
-</section>
+  <!-- Main Content -->
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
 
-
-      <!-- Realtime Services -->
-      <section id="realtime">
-        <h2 class="text-xl font-bold mb-4">📡 Realtime Services</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-          <a href="#" class="tool-btn">Train Live Status</a>
-          <a href="#" class="tool-btn">PNR Check</a>
-          <a href="#" class="tool-btn">Flight Status</a>
-          <a href="#" class="tool-btn">Pension Status</a>
+    <!-- LEFT COLUMN -->
+    <div>
+      <!-- Official Portals -->
+      <div class="block">
+        <h2 class="headline">Official Portals</h2>
+        <img src="assets/images/official-portals.jpg" alt="Official Portals" class="w-full">
+        <div class="block-content">
+          <a href="https://pfms.nic.in" class="tool-btn" target="_blank">PFMS</a>
+          <a href="https://hrms.indianrail.gov.in" class="tool-btn" target="_blank">HRMS</a>
+          <a href="https://ireps.gov.in" class="tool-btn" target="_blank">IREPS</a>
+          <a href="https://gem.gov.in" class="tool-btn" target="_blank">GeM</a>
+          <a href="https://eoffice.gov.in" class="tool-btn" target="_blank">eOffice</a>
+          <a href="https://uidai.gov.in" class="tool-btn" target="_blank">UIDAI</a>
+          <a href="https://irctc.co.in" class="tool-btn" target="_blank">IRCTC</a>
         </div>
-      </section>
+      </div>
 
-       <!-- Sections -->
-      <!-- PDF -->
-      <section id="pdf">
-        <h2 class="text-xl font-bold mb-4">📄 Document & PDF Tools</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-
-          <a class="tool-btn" href="https://ilovepdf.com" target="_blank" rel="noopener" data-desc="PDF convert, merge, split" aria-label="ILovePDF">ILovePDF</a>
-          <a class="tool-btn" href="https://smallpdf.com" target="_blank" rel="noopener" data-desc="Compress & edit PDFs" aria-label="SmallPDF">SmallPDF</a>
-          <a class="tool-btn" href="https://tools.pdf24.org" target="_blank" rel="noopener" data-desc="Free PDF creator & converter" aria-label="PDF24 Tools">PDF24 Tools</a>
-          <a class="tool-btn" href="https://sejda.com" target="_blank" rel="noopener" data-desc="Edit & sign PDF docs online" aria-label="Sejda PDF">Sejda PDF</a>
-          <a class="tool-btn" href="https://adobe.com/acrobat/online.html" target="_blank" rel="noopener" data-desc="Official Adobe PDF tools" aria-label="Adobe Acrobat Online">Adobe Acrobat</a>
-
+      <!-- Software -->
+      <div class="block">
+        <h2 class="headline">Software & Utilities</h2>
+        <img src="assets/images/software-utilities.jpg" alt="Software" class="w-full">
+        <div class="block-content">
+          <ul class="list-disc ml-6 text-sm">
+            <li><a href="https://auraiya.nic.in/eoffice-3/" target="_blank" class="text-blue-600">DigitalSignerService v7.1.0</a></li>
+            <li><a href="https://www.gst.gov.in/help/docsigner" target="_blank" class="text-blue-600">emSigner (GST/MCA21)</a></li>
+            <li><a href="https://www.incometax.gov.in/iec/foportal/downloads/dsc-management-utility" target="_blank" class="text-blue-600">emBridge (Income Tax)</a></li>
+            <li><a href="https://filesign.icegate.gov.in/" target="_blank" class="text-blue-600">ICEGATE Signer Utility</a></li>
+          </ul>
         </div>
-      </section>
+      </div>
 
-      <!-- Writing -->
-      <section id="writing">
-        <h2 class="text-xl font-bold mt-8 mb-4">🖊️ Writing & Notes</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-
-          <a class="tool-btn" href="https://docs.google.com" target="_blank" rel="noopener" data-desc="Online document editor">Google Docs</a>
-          <a class="tool-btn" href="https://office.live.com" target="_blank" rel="noopener" data-desc="Free Word on browser">Word Online</a>
-          <a class="tool-btn" href="https://zoho.com/writer" target="_blank" rel="noopener" data-desc="Cloud word processor">Zoho Writer</a>
-          <a class="tool-btn" href="https://notion.so" target="_blank" rel="noopener" data-desc="Notes, docs & databases">Notion</a>
-          <a class="tool-btn" href="https://evernote.com" target="_blank" rel="noopener" data-desc="Notes & task organizer">Evernote</a>
-
+      <!-- Daily Tools -->
+      <div class="block">
+        <h2 class="headline">Daily Tools</h2>
+        <img src="assets/images/daily-tools.jpg" alt="Daily Tools" class="w-full">
+        <div class="block-content">
+          <a href="https://ilovepdf.com/merge_pdf" target="_blank" class="tool-btn">PDF Merge</a>
+          <a href="https://smallpdf.com/compress-pdf" target="_blank" class="tool-btn">PDF Compress</a>
+          <a href="https://app.prntscr.com" target="_blank" class="tool-btn">Screenshot Tool</a>
         </div>
-      </section>
+      </div>
+    </div>
 
-      <!-- Sheets -->
-      <section id="sheets">
-        <h2 class="text-xl font-bold mt-8 mb-4">📊 Sheets & Calculation</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-
-          <a class="tool-btn" href="https://sheets.google.com" target="_blank" rel="noopener" data-desc="Cloud spreadsheets">Google Sheets</a>
-          <a class="tool-btn" href="https://office.live.com" target="_blank" rel="noopener" data-desc="Excel in browser">Excel Online</a>
-          <a class="tool-btn" href="https://zoho.com/sheet" target="_blank" rel="noopener" data-desc="Online spreadsheet app">Zoho Sheet</a>
-          <a class="tool-btn" href="https://airtable.com" target="_blank" rel="noopener" data-desc="Database + spreadsheet hybrid">Airtable</a>
-          <a class="tool-btn" href="https://smartsheet.com" target="_blank" rel="noopener" data-desc="Project spreadsheets">Smartsheet</a>
-
+    <!-- CENTER COLUMN -->
+    <div>
+      <!-- News -->
+      <div class="block">
+        <h2 class="headline">News & Circulars</h2>
+        <img src="assets/images/news-circulars.jpg" alt="News" class="w-full">
+        <div class="block-content text-sm space-y-2">
+          <div class="border-b pb-1">DA Hike 4% announced for Central Govt employees</div>
+          <div class="border-b pb-1">Railways HRMS attendance upgrade launched</div>
+          <div class="border-b pb-1">PFMS processed ₹5,000 Cr in last 24 hrs</div>
+          <div class="border-b pb-1">GST portal emSigner update released</div>
         </div>
-      </section>
+      </div>
 
-      <!-- Project Management -->
-      <section id="pm">
-        <h2 class="text-xl font-bold mt-8 mb-4">📑 Task & Project Management</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-
-          <a class="tool-btn" href="https://trello.com" target="_blank" rel="noopener" data-desc="Visual task boards">Trello</a>
-          <a class="tool-btn" href="https://asana.com" target="_blank" rel="noopener" data-desc="Team task management">Asana</a>
-          <a class="tool-btn" href="https://clickup.com" target="_blank" rel="noopener" data-desc="All-in-one productivity">ClickUp</a>
-          <a class="tool-btn" href="https://monday.com" target="_blank" rel="noopener" data-desc="Team projects dashboard">Monday.com</a>
-          <a class="tool-btn" href="https://atlassian.com/software/jira" target="_blank" rel="noopener" data-desc="Issue & project tracking">Jira</a>
-
+      <!-- Realtime -->
+      <div class="block">
+        <h2 class="headline">Realtime Services</h2>
+        <img src="assets/images/realtime-services.jpg" alt="Realtime" class="w-full">
+        <div class="block-content">
+          <a href="https://enquiry.indianrail.gov.in/ntes/" target="_blank" class="tool-btn">Train Status</a>
+          <a href="https://www.indianrail.gov.in/enquiry/PNR" target="_blank" class="tool-btn">PNR Check</a>
+          <a href="https://www.flightstats.com" target="_blank" class="tool-btn">Flight Status</a>
+          <a href="https://mausam.imd.gov.in" target="_blank" class="tool-btn">Weather</a>
         </div>
-      </section>
-
-      <!-- Storage -->
-      <section id="storage">
-        <h2 class="text-xl font-bold mt-8 mb-4">🗂️ File Storage & Sharing</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-
-          <a class="tool-btn" href="https://drive.google.com" target="_blank" rel="noopener" data-desc="Cloud file storage">Google Drive</a>
-          <a class="tool-btn" href="https://dropbox.com" target="_blank" rel="noopener" data-desc="File sync & share">Dropbox</a>
-          <a class="tool-btn" href="https://onedrive.live.com" target="_blank" rel="noopener" data-desc="Microsoft file storage">OneDrive</a>
-          <a class="tool-btn" href="https://box.com" target="_blank" rel="noopener" data-desc="Business cloud content">Box</a>
-          <a class="tool-btn" href="https://pcloud.com" target="_blank" rel="noopener" data-desc="Secure online storage">pCloud</a>
-
-        </div>
-      </section>
-
-      <!-- Screens -->
-      <section id="screen">
-        <h2 class="text-xl font-bold mt-8 mb-4">📷 Screenshots & Recording</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-
-          <a class="tool-btn" href="https://app.prntscr.com" target="_blank" rel="noopener" data-desc="Screenshot tool">LightShot</a>
-          <a class="tool-btn" href="https://nimbusweb.me/screenshot.php" target="_blank" rel="noopener" data-desc="Screen capture/record">Nimbus Capture</a>
-          <a class="tool-btn" href="https://loom.com" target="_blank" rel="noopener" data-desc="Screen recording with sharing">Loom</a>
-          <a class="tool-btn" href="https://screencast-o-matic.com" target="_blank" rel="noopener" data-desc="Easy screen recorder">Screencast-O-Matic</a>
-          <a class="tool-btn" href="https://getsharex.com" target="_blank" rel="noopener" data-desc="Free open-source capture">ShareX</a>
-
-        </div>
-      </section>
-
-      <!-- Communication -->
-      <section id="comm">
-        <h2 class="text-xl font-bold mt-8 mb-4">📞 Communication Tools</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-
-          <a class="tool-btn" href="https://zoom.us" target="_blank" rel="noopener" data-desc="Video conferencing">Zoom</a>
-          <a class="tool-btn" href="https://meet.google.com" target="_blank" rel="noopener" data-desc="Online meetings">Google Meet</a>
-          <a class="tool-btn" href="https://microsoft.com/microsoft-teams" target="_blank" rel="noopener" data-desc="Office communication">Microsoft Teams</a>
-          <a class="tool-btn" href="https://slack.com" target="_blank" rel="noopener" data-desc="Team chat & collaboration">Slack</a>
-          <a class="tool-btn" href="https://skype.com" target="_blank" rel="noopener" data-desc="Calls & chat">Skype</a>
-
-        </div>
-      </section>
-
-      <!-- Office utilities -->
-      <section id="office">
-        <h2 class="text-xl font-bold mt-8 mb-4">🧰 Office Utilities</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-
-          <a class="tool-btn" href="https://todoist.com" target="_blank" rel="noopener" data-desc="Task manager">Todoist</a>
-          <a class="tool-btn" href="https://keep.google.com" target="_blank" rel="noopener" data-desc="Notes & reminders">Google Keep</a>
-          <a class="tool-btn" href="https://calendly.com" target="_blank" rel="noopener" data-desc="Meeting scheduler">Calendly</a>
-          <a class="tool-btn" href="https://rescuetime.com" target="_blank" rel="noopener" data-desc="Productivity tracker">RescueTime</a>
-          <a class="tool-btn" href="https://pomofocus.io" target="_blank" rel="noopener" data-desc="Pomodoro timer">Pomofocus</a>
-
-        </div>
-      </section>
+      </div>
 
       <!-- Finance -->
-      <section id="finance">
-        <h2 class="text-xl font-bold mb-4">💰 Finance & HR Tools</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+      <div class="block">
+        <h2 class="headline">Finance & HR</h2>
+        <img src="assets/images/finance-hr.jpg" alt="Finance" class="w-full">
+        <div class="block-content">
           <a href="#" class="tool-btn">DA/TA Calculator</a>
           <a href="#" class="tool-btn">Tax Calculator</a>
           <a href="#" class="tool-btn">GPF/NPS Calculator</a>
           <a href="#" class="tool-btn">Salary Slip Generator</a>
         </div>
-      </section>
+      </div>
+    </div>
 
-      <!-- News -->
-      <section id="news">
-        <h2 class="text-xl font-bold mb-4">📰 News & Circulars</h2>
-        <marquee behavior="scroll" direction="left" class="bg-yellow-100 p-2 rounded">DA Hike announced • Railways HRMS update • PFMS servers maintenance • New IRCTC policy circular</marquee>
-        <div class="grid md:grid-cols-2 gap-4 mt-4">
-          <div class="glass-card">⚡ DA Hike 4% for Central Govt Employees</div>
-          <div class="glass-card">🚉 Railways launched new HRMS portal</div>
+    <!-- RIGHT COLUMN -->
+    <div>
+      <!-- Ads -->
+      <div class="block">
+        <h2 class="headline">Sponsored Ads</h2>
+        <img src="assets/images/sponsored-ads.jpg" alt="Ads" class="w-full">
+        <div class="block-content">
+          <div class="ad-box">160×600 Sidebar Ad</div>
+          <div class="ad-box mt-2">160×600 Sidebar Ad</div>
         </div>
-      </section>
+      </div>
 
-      <!-- Buy & Sell -->
-      <section id="buysell">
-        <h2 class="text-xl font-bold mb-4">👥 Lost & Found / Buy & Sell</h2>
-        <form class="glass-card space-y-3">
-          <input type="text" placeholder="Item / Lost Report" class="w-full border p-2 rounded">
-          <input type="text" placeholder="Contact Info" class="w-full border p-2 rounded">
-          <button class="bg-green-600 text-white px-3 py-2 rounded">Post</button>
-        </form>
-      </section>
+      <!-- Communication -->
+      <div class="block">
+        <h2 class="headline">Communication</h2>
+        <img src="assets/images/communication.jpg" alt="Communication" class="w-full">
+        <div class="block-content">
+          <a href="https://sandes.gov.in" target="_blank" class="tool-btn">Sandes</a>
+          <a href="https://mail.gov.in" target="_blank" class="tool-btn">NIC Mail</a>
+          <a href="https://kavach.mail.gov.in" target="_blank" class="tool-btn">Kavach 2FA</a>
+          <a href="https://webex.nic.in" target="_blank" class="tool-btn">NIC Webex</a>
+        </div>
+      </div>
 
-      <!-- Guides -->
-      <section id="guides">
-        <h2 class="text-xl font-bold mb-4">📘 Guides & Manuals</h2>
-        <ul class="list-disc ml-6 text-sm">
-          <li><a href="#">DSC Signer Installation Guide</a></li>
-          <li><a href="#">VPN Setup Manual</a></li>
-          <li><a href="#">eOffice User Manual</a></li>
-        </ul>
-      </section>
-
-      <!-- Downloads -->
-      <section id="downloads">
-        <h2 class="text-xl font-bold mb-4">⬇️ Downloads Hub</h2>
-        <p class="text-sm">Browse 100+ govt software by category. (DSC Tools, HR/Finance, Procurement, Security)</p>
-      </section>
-
-      <!-- About -->
-      <section id="about">
-        <h2 class="text-xl font-bold mb-4">ℹ️ About Us</h2>
-        <p class="text-gray-700">Ek-Drishti is an independent utility portal designed to simplify access to official tools, software, and services for Indian Government & PSU employees. <br><strong>Disclaimer:</strong> We are not affiliated with any official department.</p>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact">
-        <h2 class="text-xl font-bold mb-4">📞 Contact Us</h2>
-        <form action="https://formspree.io/f/yourid" method="POST" class="space-y-3 glass-card">
-          <input type="text" name="name" placeholder="Your Name" class="w-full border p-2 rounded">
-          <input type="email" name="email" placeholder="Your Email" class="w-full border p-2 rounded">
-          <textarea name="message" placeholder="Your Message" class="w-full border p-2 rounded"></textarea>
-          <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Send</button>
-        </form>
-      </section>
-    </main>
-
-    <!-- Sidebar Ads -->
-    <aside class="space-y-4">
-      <div class="ad-box">160×600 Sidebar Ad</div>
-      <div class="ad-box">160×600 Sidebar Ad</div>
-    </aside>
+      <!-- Lost & Found -->
+      <div class="block">
+        <h2 class="headline">Lost & Found</h2>
+        <img src="assets/images/lost-found.jpg" alt="Lost & Found" class="w-full">
+        <div class="block-content">
+          <form class="space-y-2 text-sm">
+            <input type="text" placeholder="Item" class="w-full border p-1 rounded">
+            <input type="text" placeholder="Contact" class="w-full border p-1 rounded">
+            <button class="bg-green-600 text-white px-3 py-1 rounded">Post</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white text-center py-4 mt-8">
-    <p>&copy; 2025 Ek-Drishti. All Rights Reserved.</p>
+  <footer class="border-t-4 border-black text-center text-xs py-4 mt-4 bg-gray-100">
+    <p>&copy; 2025 GovHub India • Independent digital gazette • Not an official Govt site.</p>
   </footer>
 
-  <!-- Search Filter Script -->
   <script>
-    const search = document.getElementById('search');
-    search.addEventListener('input', function(){
-      let val = this.value.toLowerCase();
-      document.querySelectorAll('.tool-btn').forEach(btn=>{
-        btn.classList.toggle('hidden', !btn.textContent.toLowerCase().includes(val));
+    document.getElementById('date').innerText = new Date().toDateString();
+    const search=document.getElementById('search');
+    search.addEventListener('input',function(){
+      let v=this.value.toLowerCase();
+      document.querySelectorAll('.tool-btn').forEach(b=>{
+        b.style.display=b.textContent.toLowerCase().includes(v)?"inline-block":"none";
       });
     });
   </script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Ek-Drishti – PSU Dashboard</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<!-- Sticky Header -->
-<header class="header">
-  <h1>📘 Ek-Drishti</h1>
-  <input type="text" id="searchInput" placeholder="Search anything…">
-  <nav>
-    <a href="#portals">Portals</a>
-    <a href="#email">Email</a>
-    <a href="#software">Software</a>
-    <a href="#tools">Daily Tools</a>
-    <a href="#realtime">Realtime</a>
-    <a href="#finance">Finance</a>
-    <a href="#news">News</a>
-    <a href="#comm">Comm</a>
-    <a href="#community">Community</a>
-    <a href="#guides">Guides</a>
-    <a href="#downloads">Downloads</a>
-  </nav>
-</header>
-
-<!-- Top Ad -->
-<div class="ad-banner">[AdSense 728x90 Banner]</div>
-
-<main class="container">
-
-  <!-- OFFICIAL PORTALS -->
-  <section id="portals">
-    <h2>🏛️ Official Portals</h2>
-    <div class="grid" id="portalList">
-      <a href="https://pfms.nic.in" target="_blank">PFMS</a>
-      <a href="https://gem.gov.in" target="_blank">GeM</a>
-      <a href="https://ireps.gov.in" target="_blank">IREPS</a>
-      <a href="https://hrms.myindianrailway.com" target="_blank">HRMS</a>
-      <a href="https://eprocure.gov.in" target="_blank">CPPP/eProcure</a>
-      <a href="https://services.eoffice.gov.in" target="_blank">eOffice</a>
-      <a href="https://sparrow.eoffice.gov.in" target="_blank">SPARROW</a>
-      <a href="https://www.digilocker.gov.in" target="_blank">DigiLocker</a>
-      <a href="https://uidai.gov.in" target="_blank">UIDAI</a>
-      <a href="https://www.icegate.gov.in" target="_blank">ICEGATE</a>
-      <a href="https://www.gst.gov.in" target="_blank">GST Portal</a>
-      <a href="https://www.mca.gov.in" target="_blank">MCA21</a>
-      <a href="https://pgportal.gov.in" target="_blank">CPGRAMS</a>
-      <a href="https://irctc.co.in" target="_blank">IRCTC</a>
-      <a href="https://ntes.indianrail.gov.in" target="_blank">NTES</a>
-      <a href="https://parivahan.gov.in" target="_blank">Parivahan</a>
-      <!-- aur bhi 50+ portals yahan add kar sakte ho -->
-    </div>
-  </section>
-
-  <!-- EMAIL LOGINS -->
-  <section id="email">
-    <h2>📧 Official Email Logins</h2>
-    <div class="grid">
-      <a href="https://mail.gov.in" target="_blank">NIC Mail</a>
-      <a href="https://imap.mail.gov.in" target="_blank">NIC IMAP</a>
-      <a href="https://sso.indianrailways.gov.in" target="_blank">RailNet SSO</a>
-      <a href="https://parichay.nic.in" target="_blank">Parichay SSO</a>
-      <a href="https://sandes.gov.in" target="_blank">Sandes Web</a>
-      <a href="https://mail.gov.in/kavach" target="_blank">Kavach 2FA</a>
-    </div>
-  </section>
-
-  <!-- SOFTWARE -->
-  <section id="software">
-    <h2>🖥️ Software & Utilities</h2>
-    <div class="grid" id="softwareList">
-      <a href="https://auraiya.nic.in/eoffice-3/" target="_blank">DigitalSigner v7.0.2</a>
-      <a href="https://wanaparthy.telangana.gov.in/e-office-templates-and-softwares/" target="_blank">Signer v4.1.7/4.1.8</a>
-      <a href="https://tutorial.gst.gov.in/userguide/loginanddsc/Install_emSigner_manual.htm" target="_blank">emSigner GST/MCA21</a>
-      <a href="https://www.incometax.gov.in/iec/foportal/downloads/dsc-management-utility" target="_blank">emBridge (Income Tax)</a>
-      <a href="https://filesign.icegate.gov.in/" target="_blank">ICEGATE Common Signer</a>
-      <a href="https://pfms.nic.in" target="_blank">PFMS DSC Utility</a>
-      <a href="https://java.com/en/download/" target="_blank">Java Runtime</a>
-      <a href="https://get.adobe.com/reader/" target="_blank">Adobe Reader</a>
-      <a href="https://www.7-zip.org/" target="_blank">7-Zip</a>
-      <a href="https://mail.gov.in/kavach" target="_blank">Kavach Client</a>
-      <!-- aur bhi 100+ softwares list me dalne hain -->
-    </div>
-  </section>
-
-  <!-- DAILY TOOLS -->
-  <section id="tools">
-    <h2>🛠️ Daily Tools</h2>
-    <div class="grid">
-      <a href="#">PDF Merge/Compress</a>
-      <a href="#">Screenshot Tool</a>
-      <a href="#">Shortcuts Dictionary</a>
-      <a href="#">English-Hindi Dictionary</a>
-      <a href="#">Office Acronyms</a>
-    </div>
-  </section>
-
-  <!-- REALTIME SERVICES -->
-  <section id="realtime">
-    <h2>📡 Realtime Services</h2>
-    <div class="grid">
-      <a href="https://ntes.indianrail.gov.in" target="_blank">Train Live Status</a>
-      <a href="https://indianrail.gov.in/enquiry/PnrEnquiry.html" target="_blank">PNR Check</a>
-      <a href="#">Flight Status (API)</a>
-      <a href="#">Weather (API)</a>
-      <a href="#">Pension Status</a>
-    </div>
-  </section>
-
-  <!-- FINANCE -->
-  <section id="finance">
-    <h2>💰 Finance & HR</h2>
-    <div class="grid">
-      <a href="#">DA/TA Calculator</a>
-      <a href="#">GPF/NPS Calculator</a>
-      <a href="#">Tax Calculator</a>
-      <a href="#">Salary Slip Generator</a>
-    </div>
-  </section>
-
-  <!-- NEWS -->
-  <section id="news">
-    <h2>📰 News & Circulars</h2>
-    <marquee>🚨 Govt Orders • DA Hike Circular • PFMS Highlights • Railway News • NIC Alerts</marquee>
-  </section>
-
-  <!-- COMMUNICATION -->
-  <section id="comm">
-    <h2>📞 Communication</h2>
-    <div class="grid">
-      <a href="https://sandes.gov.in" target="_blank">Sandes App</a>
-      <a href="https://mail.gov.in" target="_blank">NIC Mail</a>
-      <a href="https://mail.gov.in/kavach" target="_blank">Kavach</a>
-      <a href="https://govmeet.vc.nic.in" target="_blank">GovMeet</a>
-      <a href="https://bharatvc.nic.in" target="_blank">BharatVC</a>
-    </div>
-  </section>
-
-  <!-- COMMUNITY -->
-  <section id="community">
-    <h2>👥 Lost & Found / Buy & Sell</h2>
-    <p>[Form + Listings Placeholder]</p>
-  </section>
-
-  <!-- GUIDES -->
-  <section id="guides">
-    <h2>📘 Guides & Manuals</h2>
-    <div class="grid">
-      <a href="#">DSC Signer Installation Guide</a>
-      <a href="#">VPN Setup Manual</a>
-      <a href="#">eOffice User Manual</a>
-      <a href="#">PFMS SOP</a>
-    </div>
-  </section>
-
-  <!-- DOWNLOADS -->
-  <section id="downloads">
-    <h2>⬇️ Downloads Hub</h2>
-    <div class="grid">
-      <a href="https://filesign.icegate.gov.in/" target="_blank">ICEGATE Drivers</a>
-      <a href="https://auraiya.nic.in/eoffice-3/" target="_blank">DigitalSignerService</a>
-      <a href="https://java.com/en/download/" target="_blank">Java JRE</a>
-      <a href="https://get.adobe.com/reader/" target="_blank">Adobe Reader</a>
-    </div>
-  </section>
-
-</main>
-
-<!-- Sidebar Ad -->
-<aside class="sidebar-ad">[AdSense 160x600 Sidebar]</aside>
-
-<!-- Footer -->
-<footer>
-  <p>© 2025 Ek-Drishti – Not an official govt site</p>
-</footer>
-
-<script>
-  const searchInput = document.getElementById("searchInput");
-  searchInput.addEventListener("keyup", function() {
-    let filter = searchInput.value.toLowerCase();
-    document.querySelectorAll(".grid a").forEach(link => {
-      link.style.display = link.textContent.toLowerCase().includes(filter) ? "block" : "none";
-    });
-  });
-</script>
 </body>
 </html>
