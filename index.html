@@ -3,482 +3,236 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ek-Drishti GovTool – Digital Daily</title>
+  <meta name="description" content="Ek-Drishti GovTool – A Digital Daily Newspaper + Directory of Government Portals, Tools, Blogs, Videos & News.">
+  <title>Ek-Drishti GovTool – Digital Daily Directory</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    .ticker { white-space: nowrap; overflow: hidden; }
+    .ticker span { display: inline-block; padding-left:100%; animation: ticker 20s linear infinite; }
+    @keyframes ticker { 0% {transform:translateX(0);} 100% {transform:translateX(-100%);} }
+  </style>
 </head>
-<body>
-  <!-- HEADER WITH BANNER -->
-<header class="w-full bg-white shadow border-b border-gray-300">
-  <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
+<body class="bg-gray-100 text-gray-900">
 
-    
-
-    <!-- Center: Banner Ad -->
-    <div class="hidden md:block">
-      <img src="assets/ekdrishti_logo.png" alt="Header Banner" class="h-12 w-auto">
+  <!-- Header -->
+  <header class="sticky top-0 bg-white shadow z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col md:flex-row items-center justify-between">
+      <div>
+        <h1 class="text-2xl font-bold">Ek-Drishti GovTool</h1>
+        <p class="text-sm italic">Your Daily Digital Newspaper & Directory</p>
+      </div>
+      <input id="search" type="text" placeholder="Search links..." class="mt-2 md:mt-0 px-3 py-2 border rounded w-full md:w-64">
     </div>
 
+    <!-- Ticker -->
+    <div class="bg-black text-white text-sm py-1 ticker">
+      <span>🔔 Breaking: Digital India expands services • New Govt Portal Launched • Free Software Tools for Productivity • Trending Blogs • Fresh News Headlines •</span>
+    </div>
+  </header>
+
+   <!-- Important Portals Section -->
+  <section class="p-6">
+    <h2 class="text-xl font-bold mb-4">Important Railway Portals</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="card">
+        <img src="assets/official-portals.jpg" alt="Official Portals" class="card-img">
+        <p class="card-title">Official Portals</p>
+      </div>
+      <div class="card">
+        <img src="assets/finance-hr.jpg" alt="Finance HR" class="card-img">
+        <p class="card-title">Finance & HRMS</p>
+      </div>
+      <div class="card">
+        <img src="assets/office-tools.jpg" alt="Office Tools" class="card-img">
+        <p class="card-title">E-Office</p>
+      </div>
+      <div class="card">
+        <img src="assets/realtime-services.jpg" alt="Realtime Services" class="card-img">
+        <p class="card-title">Real-Time Services</p>
+      </div>
+    </div>
+  </section>
+
+
+ 
+  <!-- Main Content: 4 column newspaper layout -->
+  <main class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+    <!-- Government Portals -->
+    <section id="gov" class="bg-white rounded shadow">
+      <button class="w-full text-left p-4 font-bold border-b bg-gray-100 toggle-btn">Government Portals ⬇</button>
+      <div class="p-4 border-b">
+        <img src="official-portals.jpg" alt="Government Portals" class="w-full h-32 object-cover rounded">
+      </div>
+      <div class="content p-4 hidden">
+        <ul class="space-y-1 text-sm">
+          <li><a href="https://www.india.gov.in" target="_blank" class="hover:underline">National Portal of India</a></li>
+          <li><a href="https://uidai.gov.in" target="_blank">UIDAI – Aadhaar</a></li>
+          <li><a href="https://incometaxindia.gov.in" target="_blank">Income Tax Dept</a></li>
+          <li><a href="https://rbi.org.in" target="_blank">RBI – Reserve Bank</a></li>
+          <li><a href="https://pib.gov.in" target="_blank">Press Info Bureau</a></li>
+          <li><a href="https://eci.gov.in" target="_blank">Election Commission</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Software Tools -->
+    <section id="tools" class="bg-white rounded shadow">
+      <button class="w-full text-left p-4 font-bold border-b bg-gray-100 toggle-btn">Software Tools ⬇</button>
+       <!-- Image (always visible, just below button) -->
+  <div class="p-4 border-b">
+<img src="assets/software-utilities.jpg" alt="Software Tools" class="w-full h-32 object-cover rounded">
+         class="w-full h-32 object-cover rounded">
   </div>
-</header>
+      <div class="content p-4 hidden">
+        <ul class="space-y-1 text-sm">
+          <li><a href="https://office.com" target="_blank">MS Office Online</a></li>
+          <li><a href="https://drive.google.com" target="_blank">Google Drive</a></li>
+          <li><a href="https://slack.com" target="_blank">Slack</a></li>
+          <li><a href="https://zoom.us" target="_blank">Zoom</a></li>
+          <li><a href="https://trello.com" target="_blank">Trello</a></li>
+        </ul>
+      </div>
+    </section>
 
-  
-<!-- 🔔 Notice Ticker -->
-<div class="ticker">
-  <marquee behavior="scroll" direction="left" scrollamount="6">
-    📢 सूचना: 📌 क्यों इस वेबसाइट को Bookmark करना ज़रूरी है?
-
-यह वेबसाइट एक वन-स्टॉप डिजिटल डेस्क है, जहाँ सरकारी कर्मचारी, PSU स्टाफ और प्रतियोगी परीक्षाओं की तैयारी कर रहे छात्र अपनी रोज़मर्रा की ज़रूरतों को आसानी से पूरा कर सकते हैं।
-
-✔ सभी महत्वपूर्ण सरकारी व PSU लॉगिन पोर्टल्स एक ही जगह
-✔ आवश्यक सॉफ़्टवेयर व टूल्स डाउनलोड करने की सुविधा
-✔ यात्रा, शिक्षा और न्यायिक सेवाओं के लिए ट्रैकिंग और सूचना पोर्टल्स
-
-10+ महत्वपूर्ण सॉफ़्टवेयर और टूल्स:
-DSC Signer व Token Drivers – डिजिटल सिग्नेचर के लिए
-Java 8 / JRE Environment – eOffice और DSC के लिए ज़रूरी
-PDF Editor व PDF Size Reducer – दस्तावेज़ तैयार करने के लिए
-Image Resizer व Converter – ऑनलाइन आवेदन फॉर्म्स के लिए
-PPT Maker व Document Tools – पढ़ाई व प्रोजेक्ट्स के लिए
-Train PNR Status Checker – रेलवे टिकट स्थिति देखने के लिए
-Bus और Flight Tracking Tools – यात्रा की जानकारी के लिए
-Exam Result व Admit Card Portals – SSC, UPSC, Railways, State PSC
-Court Case Status Search (eCourts) – न्यायालय मामलों की जानकारी
-Land Records / Plot Search (Bhulekh आदि) – भूमि व प्लॉट रिकॉर्ड देखने के लिए
-Lost & Found Services – खोई हुई चीज़ें ढूँढने के लिए सरकारी पोर्टल
-
-👉 चाहे आप एक सरकारी कर्मचारी हों (फाइल मैनेजमेंट, सैलरी, HRMS, PFMS) या एक स्टूडेंट (फॉर्म भरना, डॉक्युमेंट तैयार करना, रिज़ल्ट चेक करना) — यह वेबसाइट आपकी हर ज़रूरत का समाधान है।
-  </marquee>
-</div>
-
-<style>
-  .ticker {
-    background-color: yellow;   /* चमकिला पीला */
-    color: black;               /* काला टेक्स्ट */
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 60px;          /* 1.5 cm approx (≈60px) */
-    height: 60px;               /* Fixed ticker height */
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    overflow: hidden;
-  }
-</style>
-
-<!-- Main Content -->
-<div class="mx-auto space-y-10 mt-6 px-4">
-
-  <!-- ================= ROW 1 ================= -->
-  <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
-
-    <!-- Software Block -->
-<section class="max-w-5xl mx-auto bg-white shadow rounded-2xl p-6 mt-6">
-  <!-- Headline with Image -->
-  <div class="flex items-center space-x-4 mb-6">
-    <img src="assets/software_icon.png" alt="Govt Software" class="h-12 w-12">
-    <h2 class="text-2xl font-bold text-gray-800">
-      Govt / PSU / Railway Employees – 50 Common Software List
-    </h2>
+    <!-- Latest News -->
+    <section id="news" class="bg-white rounded shadow">
+      <button class="w-full text-left p-4 font-bold border-b bg-gray-100 toggle-btn">Latest News ⬇</button>
+       <!-- Image (always visible, just below button) -->
+  <div class="p-4 border-b">
+    <img src="assets/software-utilities.jpg" alt="Software Tools" 
+         class="w-full h-32 object-cover rounded">
   </div>
+      <div class="content p-4 hidden">
+        <p class="text-sm border-b pb-2 mb-2"><a href="#">Gov launches new AI scheme</a></p>
+        <p class="text-sm border-b pb-2 mb-2"><a href="#">Stock markets hit new highs</a></p>
+        <p class="text-sm"><a href="#">Education reforms in 2025</a></p>
+      </div>
+    </section>
 
-  <!-- Software List -->
-  <ul id="software-list" class="space-y-2">
-    <li>1. Digital Signer Service v4.1.7 – <a href="#" class="text-blue-600">Download</a></li>
-    <li>2. Digital Signer Service v4.1.8 – <a href="#" class="text-blue-600">Download</a></li>
-    <li>3. Digital Signer Service v7.0.2 (Windows 64-bit) – <a href="#" class="text-blue-600">Download</a></li>
-    <li>4. Digital Signer Service v7.0.2 (Windows 32-bit) – <a href="#" class="text-blue-600">Download</a></li>
-    <li>5. Digital Signer Service v7.0.2 (Mac Installer) – <a href="#" class="text-blue-600">Download</a></li>
-    <li>6. DSC Signer Live Status Tool – <a href="#" class="text-blue-600">Check</a></li>
-    <li>7. Java Runtime (JRE) 8u131 – <a href="#" class="text-blue-600">Download</a></li>
-    <li>8. Java Runtime (JRE) 8u201 – <a href="#" class="text-blue-600">Download</a></li>
-    <li>9. Java 32-bit & 64-bit (Railway Portals) – <a href="#" class="text-blue-600">Download</a></li>
-    <li>10. NIC VPN Software (Windows) – <a href="#" class="text-blue-600">Download</a></li>
-
-    <!-- Hidden Items -->
-    <div id="more-items" class="hidden">
-      <li>11. VPN Setup Manual – <a href="#">Download</a></li>
-      <li>12. e-Office User Manual v7.0 – <a href="#">Download</a></li>
-      <li>13. NIC Host File for VPN Config – <a href="#">Download</a></li>
-      <li>14. Adobe Reader DC (Latest) – <a href="#">Download</a></li>
-      <li>15. Foxit PDF Reader – <a href="#">Download</a></li>
-      <li>16. KDK PDF Signer – <a href="#">Download</a></li>
-      <li>17. TrueSigner PRO – <a href="#">Download</a></li>
-      <li>18. Capricorn Signer Suite – <a href="#">Download</a></li>
-      <li>19. WebLedger DSC Utility – <a href="#">Download</a></li>
-      <li>20. PantaSign DSC Utility – <a href="#">Download</a></li>
-      <li>21. AnyDesk Remote Support – <a href="#">Download</a></li>
-      <li>22. TeamViewer Remote Support – <a href="#">Download</a></li>
-      <li>23. NIC Email Client – <a href="#">Download</a></li>
-      <li>24. Thunderbird ESR (Govt Approved) – <a href="#">Download</a></li>
-      <li>25. Sandes App (Govt Messaging) – <a href="#">Download</a></li>
-      <li>26. e-Pramaan Authentication Tool – <a href="#">Download</a></li>
-      <li>27. AIMS Portal (Railway Salary/Payslip) – <a href="#">Download</a></li>
-      <li>28. IREPS Utilities (Tendering) – <a href="#">Download</a></li>
-      <li>29. UMID Health Card Utility (Railways) – <a href="#">Download</a></li>
-      <li>30. HRMS Client Utility (Railways) – <a href="#">Download</a></li>
-      <li>31. Microsoft Office 365 (Govt License) – <a href="#">Download</a></li>
-      <li>32. LibreOffice (Open Source) – <a href="#">Download</a></li>
-      <li>33. WinRAR Archiver – <a href="#">Download</a></li>
-      <li>34. 7-Zip File Utility – <a href="#">Download</a></li>
-      <li>35. NIC File Transfer Utility (SFTP/FTPS) – <a href="#">Download</a></li>
-      <li>36. Putty (Secure Shell for PSU servers) – <a href="#">Download</a></li>
-      <li>37. OpenVPN Client – <a href="#">Download</a></li>
-      <li>38. FortiClient VPN – <a href="#">Download</a></li>
-      <li>39. Cisco AnyConnect VPN – <a href="#">Download</a></li>
-      <li>40. NIC Antivirus (Govt Endpoint Security) – <a href="#">Download</a></li>
-      <li>41. Seqrite Endpoint Security (PSU Licensed) – <a href="#">Download</a></li>
-      <li>42. Quick Heal Antivirus (Govt Edition) – <a href="#">Download</a></li>
-      <li>43. K7 Antivirus – <a href="#">Download</a></li>
-      <li>44. eScan Antivirus – <a href="#">Download</a></li>
-      <li>45. Mozilla Firefox ESR (Govt Approved) – <a href="#">Download</a></li>
-      <li>46. Google Chrome Enterprise (PSU Use) – <a href="#">Download</a></li>
-      <li>47. NIC Language Tools (Telugu/Hindi fonts) – <a href="#">Download</a></li>
-      <li>48. Railnet Digital Library Utility – <a href="#">Download</a></li>
-      <li>49. PFMS Client Utility (Finance) – <a href="#">Download</a></li>
-      <li>50. GSTN Offline Tool (Accounting PSU) – <a href="#">Download</a></li>
-    </div>
-  </ul>
-
-  <!-- Show More Button -->
-  <div class="text-center mt-4">
-    <button id="show-more-btn" class="px-4 py-2 bg-yellow-400 text-black font-semibold rounded hover:bg-yellow-500">
-      Show More ↓
-    </button>
+    <!-- Blogs -->
+    <section id="blogs" class="bg-white rounded shadow">
+      <button class="w-full text-left p-4 font-bold border-b bg-gray-100 toggle-btn">Trending Blogs ⬇</button>
+       <!-- Image (always visible, just below button) -->
+  <div class="p-4 border-b">
+    <img src="assets/software-utilities.jpg" alt="Software Tools" 
+         class="w-full h-32 object-cover rounded">
   </div>
-</section>
-
-<!-- JS Script -->
-<script>
-  document.getElementById("show-more-btn").addEventListener("click", function () {
-    let moreItems = document.getElementById("more-items");
-    if (moreItems.classList.contains("hidden")) {
-      moreItems.classList.remove("hidden");
-      this.innerText = "Show Less ↑";
-    } else {
-      moreItems.classList.add("hidden");
-      this.innerText = "Show More ↓";
-    }
-  });
-</script>
-
-  <!-- ================= ROW 2 ================= -->
-  <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
-
-    <!-- Box 1 -->
-    <div class="border p-4 rounded shadow bg-white">
-      <h2 class="font-bold">Communication</h2>
-      <img src="assets/communication.jpg" class="w-full h-24 object-cover my-2 rounded">
-      <div class="text-sm space-y-1">
-        <div>1. <a href="#">Sandes</a> – Govt Messenger</div>
-        <div>2. <a href="#">NIC Mail</a> – Govt Email</div>
-        <div>3. <a href="#">Kavach</a> – 2FA Login</div>
-        <div>4. <a href="#">Webex</a> – Meetings</div>
-        <div>5. <a href="#">MS Teams</a> – Collaboration</div>
+      <div class="content p-4 hidden">
+        <p class="text-sm border-b pb-2 mb-2"><a href="#">10 Free Tools for Productivity</a></p>
+        <p class="text-sm border-b pb-2 mb-2"><a href="#">Why AI is Changing Education</a></p>
+        <p class="text-sm"><a href="#">Gov Schemes You Should Know</a></p>
       </div>
-    </div>
+    </section>
 
-    
-
-<!-- ================= ROW 3 ================= -->
-  <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
-
-    <!-- Box 1 -->
-    <div class="border p-4 rounded shadow bg-white">
-      <h2 class="font-bold">Communication</h2>
-      <img src="assets/communication.jpg" class="w-full h-24 object-cover my-2 rounded">
-      <div class="text-sm space-y-1">
-        <div>1. <a href="#">Sandes</a> – Govt Messenger</div>
-        <div>2. <a href="#">NIC Mail</a> – Govt Email</div>
-        <div>3. <a href="#">Kavach</a> – 2FA Login</div>
-        <div>4. <a href="#">Webex</a> – Meetings</div>
-        <div>5. <a href="#">MS Teams</a> – Collaboration</div>
+    <!-- Videos -->
+    <section id="videos" class="bg-white rounded shadow">
+      <button class="w-full text-left p-4 font-bold border-b bg-gray-100 toggle-btn">Featured Videos ⬇</button>
+       <!-- Image (always visible, just below button) -->
+  <div class="p-4 border-b">
+    <img src="assets/software-utilities.jpg" alt="Software Tools" 
+         class="w-full h-32 object-cover rounded">
+  </div>
+      <div class="content p-4 hidden">
+        <iframe width="100%" height="150" src="https://www.youtube.com/embed/3h9p0HcT9rQ" allowfullscreen></iframe>
       </div>
-    </div>
+    </section>
 
-    <!-- Box 2 -->
-    <div class="border p-4 rounded shadow bg-white">
-      <h2 class="font-bold">Students</h2>
-      <img src="assets/students.jpg" class="w-full h-24 object-cover my-2 rounded">
-      <div class="text-sm space-y-1">
-        <div>1. <a href="#">NTA Exams</a> – Admit Card</div>
-        <div>2. <a href="#">SSC</a> – Result</div>
-        <div>3. <a href="#">UPSC</a> – Result</div>
-        <div>4. <a href="#">CBSE</a> – Marksheets</div>
-        <div>5. <a href="#">Scholarship</a> – NSP Portal</div>
+    <!-- Jobs -->
+    <section id="jobs" class="bg-white rounded shadow">
+      <button class="w-full text-left p-4 font-bold border-b bg-gray-100 toggle-btn">Jobs & Careers ⬇</button>
+       <!-- Image (always visible, just below button) -->
+  <div class="p-4 border-b">
+    <img src="assets/software-utilities.jpg" alt="Software Tools" 
+         class="w-full h-32 object-cover rounded">
+  </div>
+      <div class="content p-4 hidden">
+        <ul class="space-y-1 text-sm">
+          <li><a href="https://naukri.com" target="_blank">Naukri</a></li>
+          <li><a href="https://linkedin.com/jobs" target="_blank">LinkedIn Jobs</a></li>
+          <li><a href="https://indeed.com" target="_blank">Indeed</a></li>
+        </ul>
       </div>
-    </div>
+    </section>
 
-   
-
-<script>
-  function toggleMore(id, btn) {
-    const box = document.getElementById(id);
-    const extras = box.querySelector('.extra-links');
-    if (extras) {
-      extras.classList.toggle('hidden');
-      btn.textContent = extras.classList.contains('hidden') ? "Show More ↓" : "Show Less ↑";
-    }
-  }
-</script>
-
-<script>
-  function toggleMore(id, btn) {
-    const box = document.getElementById(id);
-    const extras = box.querySelector('.extra-links');
-    if (extras) {
-      extras.classList.toggle('hidden');
-      btn.textContent = extras.classList.contains('hidden') ? "Show More ↓" : "Show Less ↑";
-    }
-  }
-</script>
-
-  <!-- ================= ROW 4 ================= -->
-  <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
-
-    <!-- Box 1 -->
-    <div class="border p-4 rounded shadow bg-white">
-      <h2 class="font-bold">Communication</h2>
-      <img src="assets/communication.jpg" class="w-full h-24 object-cover my-2 rounded">
-      <div class="text-sm space-y-1">
-        <div>1. <a href="#">Sandes</a> – Govt Messenger</div>
-        <div>2. <a href="#">NIC Mail</a> – Govt Email</div>
-        <div>3. <a href="#">Kavach</a> – 2FA Login</div>
-        <div>4. <a href="#">Webex</a> – Meetings</div>
-        <div>5. <a href="#">MS Teams</a> – Collaboration</div>
+    <!-- Health -->
+    <section id="health" class="bg-white rounded shadow">
+      <button class="w-full text-left p-4 font-bold border-b bg-gray-100 toggle-btn">Health & Wellness ⬇</button>
+       <!-- Image (always visible, just below button) -->
+  <div class="p-4 border-b">
+    <img src="assets/software-utilities.jpg" alt="Software Tools" 
+         class="w-full h-32 object-cover rounded">
+  </div>
+      <div class="content p-4 hidden">
+        <ul class="space-y-1 text-sm">
+          <li><a href="https://www.nhp.gov.in" target="_blank">National Health Portal</a></li>
+          <li><a href="https://who.int" target="_blank">WHO</a></li>
+        </ul>
       </div>
-    </div>
+    </section>
 
-    <!-- Box 2 -->
-    <div class="border p-4 rounded shadow bg-white">
-      <h2 class="font-bold">Students</h2>
-      <img src="assets/students.jpg" class="w-full h-24 object-cover my-2 rounded">
-      <div class="text-sm space-y-1">
-        <div>1. <a href="#">NTA Exams</a> – Admit Card</div>
-        <div>2. <a href="#">SSC</a> – Result</div>
-        <div>3. <a href="#">UPSC</a> – Result</div>
-        <div>4. <a href="#">CBSE</a> – Marksheets</div>
-        <div>5. <a href="#">Scholarship</a> – NSP Portal</div>
+    <!-- Education -->
+    <section id="education" class="bg-white rounded shadow">
+      <button class="w-full text-left p-4 font-bold border-b bg-gray-100 toggle-btn">Education & Learning ⬇</button>
+       <!-- Image (always visible, just below button) -->
+  <div class="p-4 border-b">
+    <img src="assets/software-utilities.jpg" alt="Software Tools" 
+         class="w-full h-32 object-cover rounded">
+  </div>
+      <div class="content p-4 hidden">
+        <ul class="space-y-1 text-sm">
+          <li><a href="https://swayam.gov.in" target="_blank">SWAYAM</a></li>
+          <li><a href="https://nptel.ac.in" target="_blank">NPTEL</a></li>
+        </ul>
       </div>
-    </div>
+    </section>
 
-   
-
-  
-  
-  <!-- Main Content -->
-  <div class="mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 mt-4 px-4">
-
-    <!-- LEFT COLUMN 1 -->
-    <div>
-      <!-- Official Portals -->
-      <div class="block">
-        <h2 class="headline">Official Portals</h2>
-        <img src="assets/official-portals.jpg" alt="Official Portals" class="w-full">
-        <div class="block-content">
-          <a href="https://pfms.nic.in" target="_blank" class="tool-btn">PFMS</a>
-          <a href="https://hrms.indianrail.gov.in" target="_blank" class="tool-btn">HRMS (Railways)</a>
-          <a href="https://ireps.gov.in" target="_blank" class="tool-btn">IREPS</a>
-          <a href="https://gem.gov.in" target="_blank" class="tool-btn">GeM</a>
-          <a href="https://eprocure.gov.in" target="_blank" class="tool-btn">CPPP</a>
-          <a href="https://sparrow.eoffice.gov.in" target="_blank" class="tool-btn">SPARROW</a>
-          <a href="https://eoffice.gov.in" target="_blank" class="tool-btn">eOffice</a>
-          <a href="https://digilocker.gov.in" target="_blank" class="tool-btn">DigiLocker</a>
-          <a href="https://uidai.gov.in" target="_blank" class="tool-btn">UIDAI</a>
-          <a href="https://irctc.co.in" target="_blank" class="tool-btn">IRCTC</a>
-          <a href="https://rbi.org.in" target="_blank" class="tool-btn">RBI</a>
-          <a href="https://sebi.gov.in" target="_blank" class="tool-btn">SEBI</a>
-          <a href="https://epfindia.gov.in" target="_blank" class="tool-btn">EPFO</a>
-          <a href="https://npci.org.in" target="_blank" class="tool-btn">NPCI</a>
-          <a href="https://gst.gov.in" target="_blank" class="tool-btn">GST</a>
-          <a href="https://www.mca.gov.in/mca21/" target="_blank" class="tool-btn">MCA21</a>
-          <a href="https://icegate.gov.in" target="_blank" class="tool-btn">ICEGATE</a>
-          <a href="https://pgportal.gov.in" target="_blank" class="tool-btn">CPGRAMS</a>
-          <a href="https://eprocure.gov.in/epublish/app" target="_blank" class="tool-btn">GePNIC</a>
-          <a href="https://parivahan.gov.in" target="_blank" class="tool-btn">Vahan / Sarathi</a>
-        </div>
+  </main>
+ <!-- Community Chat Section instead of Ad -->
+  <div class="max-w-7xl mx-auto my-4">
+    <div class="bg-green-100 border border-green-300 p-4 rounded shadow">
+      <h2 class="font-bold text-lg mb-2">💬 Public Community Chat (No Login Required)</h2>
+      <div class="bg-white border rounded p-3 h-40 overflow-y-auto text-sm mb-3">
+        <p><strong>Anon1:</strong> Does anyone know the new e-office circular?</p>
+        <p><strong>Engineer2:</strong> Yes, it was updated last week on the portal.</p>
+        <p><strong>Admin:</strong> Please share important notices here.</p>
+        <p class="italic text-gray-500">[Placeholder Chat – You can embed real-time chat iframe here later]</p>
       </div>
-      
-
-      <!-- Daily Tools -->
-      <div class="block">
-        <h2 class="headline">Daily Tools</h2>
-        <img src="assets/images/daily-tools.jpg" alt="Daily Tools" class="w-full">
-        <div class="block-content">
-          <a href="https://ilovepdf.com/merge_pdf" target="_blank" class="tool-btn">PDF Merge</a>
-          <a href="https://smallpdf.com/compress-pdf" target="_blank" class="tool-btn">PDF Compress</a>
-          <a href="https://app.prntscr.com" target="_blank" class="tool-btn">Screenshot Tool</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- CENTER COLUMN 2 -->
-    <div>
-      <!-- Office Utility Tools -->
-      <div class="block">
-        <h2 class="headline">Office Utility Tools</h2>
-        <img src="assets/office-tools.jpg" alt="Office Tools" class="w-full">
-        <div class="block-content text-sm space-y-2">
-          <!-- only unique entries kept -->
-          <div class="border-b pb-1"><a href="https://ilovepdf.com" target="_blank" class="text-blue-600">ILovePDF</a> – Merge, split, compress PDFs</div>
-          <div class="border-b pb-1"><a href="https://smallpdf.com" target="_blank" class="text-blue-600">SmallPDF</a> – Convert Word/Excel ↔ PDF</div>
-          <div class="border-b pb-1"><a href="https://sejda.com" target="_blank" class="text-blue-600">Sejda PDF</a> – Edit & sign PDFs</div>
-          <div class="border-b pb-1"><a href="https://tools.pdf24.org" target="_blank" class="text-blue-600">PDF24 Tools</a> – Free PDF kit</div>
-          <div class="border-b pb-1"><a href="https://remove.bg" target="_blank" class="text-blue-600">Remove.bg</a> – Remove image backgrounds</div>
-          <div class="border-b pb-1"><a href="https://tinypng.com" target="_blank" class="text-blue-600">TinyPNG</a> – Image size reducer</div>
-        </div>
-      </div>
-
-      <h2>🚉 Government / PSU / Railway Employees – Software Downloads</h2>
-
-<!-- DSC Signer -->
-<details>
-  <summary>🔑 Digital Signer Service (DSC Signer)</summary>
-  <a href="https://auraiya.nic.in/eoffice-3/" target="_blank">DigitalSignerService v4.1.7 – Windows</a>
-  <a href="https://auraiya.nic.in/eoffice-3/" target="_blank">DigitalSignerService v4.1.8 – Windows</a>
-  <a href="https://sonbhadra.nic.in/eoffice-training-videos-software/" target="_blank">DigitalSignerService v7.0.2 – Windows 64-bit</a>
-  <a href="https://sonbhadra.nic.in/eoffice-training-videos-software/" target="_blank">DigitalSignerService v7.0.2 – Windows 32-bit</a>
-  <a href="https://sonbhadra.nic.in/eoffice-training-videos-software/" target="_blank">DigitalSignerService v7.0.2 – Mac Installer</a>
-  <a href="https://eoffsigner.eoffice.gov.in:55101/check/isLive" target="_blank">✔ Check Live Status (Service Endpoint)</a>
-</details>
-
-<!-- Java Runtime -->
-<details>
-  <summary>☕ Java Runtime Environment (JRE)</summary>
-  <a href="https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html" target="_blank">Java 8 Update 131</a>
-  <a href="https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html" target="_blank">Java 8 Update 201</a>
-  <a href="https://ncr.indianrailways.gov.in/" target="_blank">Java 32-bit & 64-bit – Railway Portal</a>
-</details>
-
-<!-- e-Office Manual -->
-<details>
-  <summary>📘 e-Office User Manual & Tools</summary>
-  <a href="https://auraiya.nic.in/eoffice-3/" target="_blank">e-Office User Manual File v7.0</a>
-  <a href="https://ghaziabad.nic.in/en/e-office/" target="_blank">Host File (VPN configuration)</a>
-</details>
-
-<!-- VPN Software -->
-<details>
-  <summary>🌐 VPN Clients</summary>
-  <a href="https://auraiya.nic.in/eoffice-3/" target="_blank">NIC VPN Software – Windows</a>
-  <a href="https://auraiya.nic.in/eoffice-3/" target="_blank">VPN Manual (Installation Guide)</a>
-</details>
-
-<!-- PDF Tools -->
-<details>
-  <summary>📄 PDF Utilities</summary>
-  <a href="https://get.adobe.com/reader/" target="_blank">Adobe Reader (Latest)</a>
-  <a href="https://www.pdfsigner.in/" target="_blank">KDK PDF Signer</a>
-  <a href="https://truecopy.in/truesigner-pro/" target="_blank">TrueSigner PRO</a>
-  <a href="https://www.certificate.digital/software/" target="_blank">Capricorn Signer Suite</a>
-</details>
-
-<!-- Remote Support -->
-<details>
-  <summary>🖥 Remote Support Tools</summary>
-  <a href="https://anydesk.com/en/downloads" target="_blank">AnyDesk (Latest)</a>
-  <a href="https://www.teamviewer.com/en/download/" target="_blank">TeamViewer (Latest)</a>
-</details>
-
-<!-- NIC Tools -->
-<details>
-  <summary>📡 NIC & Govt Apps</summary>
-  <a href="https://www.sandes.gov.in/" target="_blank">Sandes App (Govt Messaging)</a>
-  <a href="https://mail.gov.in/" target="_blank">NIC Email Client / Plugins</a>
-  <a href="https://itmission.kerala.gov.in/sites/default/files/Projects/Forms/DSC%20Installation%20eOffice%205.5_09.pdf" target="_blank">NIC DSC Installation Guide (Kerala IT Mission)</a>
-</details>
-
-<!-- Railway Tools -->
-<details>
-  <summary>🚆 Railway Employee Tools</summary>
-  <a href="https://aims.indianrailways.gov.in/" target="_blank">AIMS Portal (Salary / Payslip)</a>
-  <a href="https://ireps.gov.in/" target="_blank">IREPS Utilities (Tendering)</a>
-  <a href="https://umid.digitalir.in/" target="_blank">UMID Health Card Software</a>
-  <a href="https://hrms.indianrail.gov.in/HRMS/" target="_blank">HRMS Client Utility</a>
-</details>
-
-</body>
-</html>
-
-      <!-- Realtime -->
-      <div class="block">
-        <h2 class="headline">Live Status & Realtime Services</h2>
-        <img src="assets/realtime-services.jpg" alt="Realtime" class="w-full">
-        <div class="block-content space-y-2 text-sm">
-          <!-- your realtime links kept as is -->
-          <div class="tool-item"><a href="https://enquiry.indianrail.gov.in/ntes/" target="_blank" class="tool-btn">Train Running Status</a></div>
-          <div class="tool-item"><a href="https://www.indianrail.gov.in/enquiry/PNR" target="_blank" class="tool-btn">PNR Status Check</a></div>
-          <div class="tool-item"><a href="https://www.flightstats.com" target="_blank" class="tool-btn">Flight Status</a></div>
-          <div class="tool-item"><a href="https://www.indiapost.gov.in/vas/pages/trackconsignment.aspx" target="_blank" class="tool-btn">India Post Tracking</a></div>
-          <div class="tool-item"><a href="https://mausam.imd.gov.in" target="_blank" class="tool-btn">IMD Weather</a></div>
-        </div>
-      </div>
-
-      <!-- Finance -->
-      <div class="block">
-        <h2 class="headline">Finance & HR</h2>
-        <img src="assets/finance-hr.jpg" alt="Finance" class="w-full">
-        <div class="block-content space-y-2 text-sm">
-          <!-- finance links kept -->
-          <div class="tool-item"><a href="https://www.gconnect.in/online-calculators/da-ta-calculator" target="_blank" class="tool-btn">DA/TA Calculator</a></div>
-          <div class="tool-item"><a href="https://incometaxindia.gov.in/pages/tools/tax-calculator.aspx" target="_blank" class="tool-btn">Income Tax Calculator</a></div>
-          <div class="tool-item"><a href="https://npscra.nsdl.co.in/nsdl-nps.php" target="_blank" class="tool-btn">GPF/NPS Calculator</a></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- RIGHT COLUMN 3 -->
-    <div>
-      <!-- Ads -->
-      <div class="block">
-        <h2 class="headline">Sponsored Ads</h2>
-        <img src="assets/sponsored-ads.jpg" alt="Ads" class="w-full">
-        <div class="block-content">
-          <div class="ad-box">160×600 Sidebar Ad</div>
-          <div class="ad-box mt-2">160×600 Sidebar Ad</div>
-        </div>
-      </div>
-
-      <!-- Communication 4 -->
-      <div class="block">
-        <h2 class="headline">Communication</h2>
-        <img src="assets/images/communication.jpg" alt="Communication" class="w-full">
-        <div class="block-content">
-          <a href="https://sandes.gov.in" target="_blank" class="tool-btn">Sandes</a>
-          <a href="https://mail.gov.in" target="_blank" class="tool-btn">NIC Mail</a>
-          <a href="https://kavach.mail.gov.in" target="_blank" class="tool-btn">Kavach 2FA</a>
-          <a href="https://webex.nic.in" target="_blank" class="tool-btn">NIC Webex</a>
-        </div>
-      </div>
-
-      <!-- Lost & Found 4 -->
-      <div class="block">
-        <h2 class="headline">Lost & Found</h2>
-        <img src="assets/images/lost-found.jpg" alt="Lost & Found" class="w-full">
-        <div class="block-content">
-          <form class="space-y-2 text-sm">
-            <input type="text" placeholder="Item" class="w-full border p-1 rounded">
-            <input type="text" placeholder="Contact" class="w-full border p-1 rounded">
-            <button class="bg-green-600 text-white px-3 py-1 rounded">Post</button>
-          </form>
-        </div>
-      </div>
+      <a href="https://chat.whatsapp.com/XXXXX" target="_blank" class="inline-block bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
+        📱 Join WhatsApp Group: E-Office Engineers
+      </a>
     </div>
   </div>
+
 
   <!-- Footer -->
-  <footer class="border-t-4 border-black text-center text-xs py-4 mt-4 bg-gray-100">
-    <p>&copy; 2025 Ek-Drishti GovTool • Independent digital gazette • Not an official Govt site.</p>
+  <footer class="bg-gray-800 text-white py-6 mt-10">
+    <div class="max-w-7xl mx-auto text-center text-sm">
+      <p>© 2025 Ek-Drishti GovTool – Independent Directory</p>
+      <p class="italic">Disclaimer: Independent newspaper-style digital directory. Not an official government site.</p>
+    </div>
   </footer>
 
+  <!-- Script: Dropdown + Live Search -->
   <script>
-    document.getElementById('date').innerText = new Date().toDateString();
-    const search=document.getElementById('search');
-    search.addEventListener('input',function(){
-      let v=this.value.toLowerCase();
-      document.querySelectorAll('.tool-btn').forEach(b=>{
-        b.style.display=b.textContent.toLowerCase().includes(v)?"inline-block":"none";
+    // Dropdown toggle
+    document.querySelectorAll(".toggle-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const content = btn.nextElementSibling.nextElementSibling;
+        content.classList.toggle("hidden");
+      });
+    });
+
+    // Live search
+    const searchInput = document.getElementById("search");
+    searchInput.addEventListener("keyup", function() {
+      const filter = searchInput.value.toLowerCase();
+      document.querySelectorAll("main section .content *").forEach(el => {
+        const text = el.textContent.toLowerCase();
+        el.style.display = text.includes(filter) ? "" : "none";
       });
     });
   </script>
+
 </body>
 </html>
