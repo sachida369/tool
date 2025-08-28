@@ -62,53 +62,128 @@ Lost & Found Services – खोई हुई चीज़ें ढूँढन
   }
 </style>
 
-  <!-- Main Content -->
-<div class="mx-auto grid grid-cols-1 gap-4 mt-4 px-4">
+<!-- Main Content -->
+<div class="mx-auto grid grid-cols-1 gap-6 mt-4 px-4">
 
-  <!-- Example Box -->
-  <div class="block border p-4 rounded shadow">
+  <!-- ROW 1 : Official Portals -->
+  <div class="block border p-4 rounded shadow bg-white">
     <h2 class="headline text-lg font-bold">Official Portals</h2>
     <img src="assets/official-portals.jpg" alt="Official Portals" class="w-full h-32 object-cover my-2 rounded">
 
-    <!-- Product List -->
-    <div class="block-content space-y-1 text-sm max-h-[250px] overflow-hidden" id="officialPortals">
-      <a href="https://pfms.nic.in" target="_blank" class="block text-blue-600">PFMS – Public Finance Mgmt System</a>
-      <a href="https://hrms.indianrail.gov.in" target="_blank" class="block text-blue-600">HRMS – Railway Employee Portal</a>
-      <a href="https://ireps.gov.in" target="_blank" class="block text-blue-600">IREPS – Tender Portal</a>
-      <a href="https://gem.gov.in" target="_blank" class="block text-blue-600">GeM – Government e-Marketplace</a>
-      <a href="https://eprocure.gov.in" target="_blank" class="block text-blue-600">CPPP – Central Procurement</a>
-      <a href="https://sparrow.eoffice.gov.in" target="_blank" class="block text-blue-600">SPARROW – eOffice Portal</a>
-      <a href="https://eoffice.gov.in" target="_blank" class="block text-blue-600">eOffice – File Management</a>
-      <a href="https://digilocker.gov.in" target="_blank" class="block text-blue-600">DigiLocker – Digital Docs</a>
-      <a href="https://uidai.gov.in" target="_blank" class="block text-blue-600">UIDAI – Aadhaar Services</a>
-      <a href="https://irctc.co.in" target="_blank" class="block text-blue-600">IRCTC – Train Booking</a>
+    <div class="block-content space-y-2 text-sm" id="officialPortals">
+      <div>1. <a href="https://pfms.nic.in" target="_blank" class="text-blue-600 font-semibold">PFMS</a> – Public Finance Management System</div>
+      <div>2. <a href="https://hrms.indianrail.gov.in" target="_blank" class="text-blue-600 font-semibold">HRMS</a> – Railway Employee Portal</div>
+      <div>3. <a href="https://ireps.gov.in" target="_blank" class="text-blue-600 font-semibold">IREPS</a> – Railway Tenders</div>
+      <div>4. <a href="https://gem.gov.in" target="_blank" class="text-blue-600 font-semibold">GeM</a> – Govt e-Marketplace</div>
+      <div>5. <a href="https://irctc.co.in" target="_blank" class="text-blue-600 font-semibold">IRCTC</a> – Train Ticket & PNR</div>
+      <div>6. <a href="https://uidai.gov.in" target="_blank" class="text-blue-600 font-semibold">UIDAI</a> – Aadhaar Services</div>
+      <div>7. <a href="https://digilocker.gov.in" target="_blank" class="text-blue-600 font-semibold">DigiLocker</a> – Digital Docs</div>
+      <div>8. <a href="https://sparrow.eoffice.gov.in" target="_blank" class="text-blue-600 font-semibold">SPARROW</a> – Online APAR</div>
+      <div>9. <a href="https://eoffice.gov.in" target="_blank" class="text-blue-600 font-semibold">eOffice</a> – Govt File Management</div>
+      <div>10. <a href="https://epfindia.gov.in" target="_blank" class="text-blue-600 font-semibold">EPFO</a> – PF & Pension</div>
 
-      <!-- Hidden items -->
+      <!-- Hidden Extra -->
       <div class="hidden extra-links">
-        <a href="https://rbi.org.in" target="_blank" class="block text-blue-600">RBI</a>
-        <a href="https://sebi.gov.in" target="_blank" class="block text-blue-600">SEBI</a>
-        <a href="https://epfindia.gov.in" target="_blank" class="block text-blue-600">EPFO</a>
-        <a href="https://npci.org.in" target="_blank" class="block text-blue-600">NPCI</a>
-        <a href="https://gst.gov.in" target="_blank" class="block text-blue-600">GST</a>
-        <a href="https://mca.gov.in" target="_blank" class="block text-blue-600">MCA21</a>
-        <a href="https://icegate.gov.in" target="_blank" class="block text-blue-600">ICEGATE</a>
+        <div>11. <a href="https://rbi.org.in" target="_blank" class="text-blue-600 font-semibold">RBI</a> – Central Bank</div>
+        <div>12. <a href="https://sebi.gov.in" target="_blank" class="text-blue-600 font-semibold">SEBI</a> – Securities Market</div>
+        <div>13. <a href="https://npci.org.in" target="_blank" class="text-blue-600 font-semibold">NPCI</a> – UPI / RuPay</div>
       </div>
     </div>
-
-    <!-- Show More Button -->
-    <button onclick="toggleMore('officialPortals')" 
-      class="mt-2 bg-gray-800 text-white px-3 py-1 rounded">
-      Show More ↓
-    </button>
+    <button onclick="toggleMore('officialPortals', this)" class="mt-2 bg-gray-800 text-white px-3 py-1 rounded">Show More ↓</button>
   </div>
 
+  <!-- ROW 2 : Software & Utilities -->
+  <div class="block border p-4 rounded shadow bg-white">
+    <h2 class="headline text-lg font-bold">Software & Utilities</h2>
+    <img src="assets/software-utilities.jpg" alt="Software" class="w-full h-32 object-cover my-2 rounded">
+
+    <div class="block-content space-y-2 text-sm" id="softwareTools">
+      <div>1. <a href="https://auraiya.nic.in/eoffice-3/" target="_blank" class="text-blue-600 font-semibold">DSC Signer v4.1.7</a> – For eOffice (RDSO)</div>
+      <div>2. <a href="https://auraiya.nic.in/eoffice-3/" target="_blank" class="text-blue-600 font-semibold">DSC Signer v4.1.8</a> – For eOffice (Railway Board)</div>
+      <div>3. <a href="https://sonbhadra.nic.in/eoffice-training-videos-software/" target="_blank" class="text-blue-600 font-semibold">DSC Signer v7.0.2</a> – For NIC Users</div>
+      <div>4. <a href="https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html" target="_blank" class="text-blue-600 font-semibold">Java 8</a> – Required for DSC</div>
+      <div>5. <a href="https://get.adobe.com/reader/" target="_blank" class="text-blue-600 font-semibold">Adobe Reader</a> – PDF Docs</div>
+      <div>6. <a href="https://anydesk.com/en/downloads" target="_blank" class="text-blue-600 font-semibold">AnyDesk</a> – Remote Support</div>
+      <div>7. <a href="https://teamviewer.com" target="_blank" class="text-blue-600 font-semibold">TeamViewer</a> – Remote Access</div>
+      <div>8. <a href="https://sandes.gov.in" target="_blank" class="text-blue-600 font-semibold">Sandes App</a> – Govt Messenger</div>
+      <div>9. <a href="https://mail.gov.in" target="_blank" class="text-blue-600 font-semibold">NIC Mail</a> – Govt Email</div>
+      <div>10. <a href="https://kavach.mail.gov.in" target="_blank" class="text-blue-600 font-semibold">Kavach</a> – 2FA for Email</div>
+
+      <!-- Hidden -->
+      <div class="hidden extra-links">
+        <div>11. <a href="https://zoom.us" target="_blank" class="text-blue-600 font-semibold">Zoom</a> – Meetings</div>
+        <div>12. <a href="https://slack.com" target="_blank" class="text-blue-600 font-semibold">Slack</a> – Collaboration</div>
+      </div>
+    </div>
+    <button onclick="toggleMore('softwareTools', this)" class="mt-2 bg-gray-800 text-white px-3 py-1 rounded">Show More ↓</button>
+  </div>
+
+  <!-- ROW 3 : Realtime Services -->
+  <div class="block border p-4 rounded shadow bg-white">
+    <h2 class="headline text-lg font-bold">Live Status & Realtime</h2>
+    <img src="assets/realtime-services.jpg" alt="Realtime" class="w-full h-32 object-cover my-2 rounded">
+
+    <div class="block-content space-y-2 text-sm" id="realtime">
+      <div>1. <a href="https://enquiry.indianrail.gov.in/ntes/" target="_blank" class="text-blue-600 font-semibold">NTES</a> – Train Live Running</div>
+      <div>2. <a href="https://indianrail.gov.in/enquiry/PNR" target="_blank" class="text-blue-600 font-semibold">PNR Status</a> – Ticket Check</div>
+      <div>3. <a href="https://flightstats.com" target="_blank" class="text-blue-600 font-semibold">FlightStats</a> – Flight Live Status</div>
+      <div>4. <a href="https://indiapost.gov.in" target="_blank" class="text-blue-600 font-semibold">India Post</a> – Parcel Tracking</div>
+      <div>5. <a href="https://mausam.imd.gov.in" target="_blank" class="text-blue-600 font-semibold">IMD</a> – Weather Info</div>
+      <div>6. <a href="https://parivahan.gov.in" target="_blank" class="text-blue-600 font-semibold">Parivahan</a> – Vehicle & License</div>
+      <div>7. <a href="https://pgportal.gov.in" target="_blank" class="text-blue-600 font-semibold">CPGRAMS</a> – Grievances</div>
+      <div>8. <a href="https://services.ecourts.gov.in" target="_blank" class="text-blue-600 font-semibold">eCourts</a> – Case Status</div>
+      <div>9. <a href="https://bhulekh.up.nic.in" target="_blank" class="text-blue-600 font-semibold">Bhulekh</a> – Land Records</div>
+      <div>10. <a href="https://lostfound.gov.in" target="_blank" class="text-blue-600 font-semibold">Lost & Found</a> – Govt Portal</div>
+    </div>
+  </div>
+
+  <!-- ROW 4 : Finance & HR -->
+  <div class="block border p-4 rounded shadow bg-white">
+    <h2 class="headline text-lg font-bold">Finance & HR</h2>
+    <img src="assets/finance-hr.jpg" alt="Finance" class="w-full h-32 object-cover my-2 rounded">
+
+    <div class="block-content space-y-2 text-sm" id="finance">
+      <div>1. <a href="https://gconnect.in" target="_blank" class="text-blue-600 font-semibold">DA/TA Calculator</a> – Allowance</div>
+      <div>2. <a href="https://incometaxindia.gov.in" target="_blank" class="text-blue-600 font-semibold">Income Tax Calculator</a> – IT Dept</div>
+      <div>3. <a href="https://npscra.nsdl.co.in" target="_blank" class="text-blue-600 font-semibold">NPS/GPF</a> – Retirement</div>
+      <div>4. <a href="https://epfindia.gov.in" target="_blank" class="text-blue-600 font-semibold">EPFO</a> – PF Portal</div>
+      <div>5. <a href="https://rbi.org.in" target="_blank" class="text-blue-600 font-semibold">RBI</a> – Reserve Bank</div>
+      <div>6. <a href="https://sebi.gov.in" target="_blank" class="text-blue-600 font-semibold">SEBI</a> – Securities</div>
+      <div>7. <a href="https://npci.org.in" target="_blank" class="text-blue-600 font-semibold">NPCI</a> – UPI/RuPay</div>
+      <div>8. <a href="https://gst.gov.in" target="_blank" class="text-blue-600 font-semibold">GST</a> – Tax Portal</div>
+      <div>9. <a href="https://mca.gov.in" target="_blank" class="text-blue-600 font-semibold">MCA21</a> – Corporate Affairs</div>
+      <div>10. <a href="https://nsdl.co.in" target="_blank" class="text-blue-600 font-semibold">NSDL</a> – Securities Depository</div>
+    </div>
+  </div>
+
+  <!-- ROW 5 : Communication -->
+  <div class="block border p-4 rounded shadow bg-white">
+    <h2 class="headline text-lg font-bold">Communication</h2>
+    <img src="assets/communication.jpg" alt="Communication" class="w-full h-32 object-cover my-2 rounded">
+
+    <div class="block-content space-y-2 text-sm" id="communication">
+      <div>1. <a href="https://sandes.gov.in" target="_blank" class="text-blue-600 font-semibold">Sandes</a> – Govt Messenger</div>
+      <div>2. <a href="https://mail.gov.in" target="_blank" class="text-blue-600 font-semibold">NIC Mail</a> – Govt Email</div>
+      <div>3. <a href="https://kavach.mail.gov.in" target="_blank" class="text-blue-600 font-semibold">Kavach</a> – 2FA Login</div>
+      <div>4. <a href="https://webex.nic.in" target="_blank" class="text-blue-600 font-semibold">NIC Webex</a> – Meetings</div>
+      <div>5. <a href="https://teams.microsoft.com" target="_blank" class="text-blue-600 font-semibold">MS Teams</a> – Collaboration</div>
+      <div>6. <a href="https://zoom.us" target="_blank" class="text-blue-600 font-semibold">Zoom</a> – Meetings</div>
+      <div>7. <a href="https://signal.org" target="_blank" class="text-blue-600 font-semibold">Signal</a> – Messaging</div>
+      <div>8. <a href="https://slack.com" target="_blank" class="text-blue-600 font-semibold">Slack</a> – Team Tool</div>
+      <div>9. <a href="https://telegram.org" target="_blank" class="text-blue-600 font-semibold">Telegram</a> – Groups</div>
+      <div>10. <a href="https://whatsapp.com" target="_blank" class="text-blue-600 font-semibold">WhatsApp</a> – Messaging</div>
+    </div>
+  </div>
 </div>
 
 <script>
-  function toggleMore(id) {
+  function toggleMore(id, btn) {
     const box = document.getElementById(id);
     const extras = box.querySelector('.extra-links');
-    extras.classList.toggle('hidden');
+    if (extras) {
+      extras.classList.toggle('hidden');
+      btn.textContent = extras.classList.contains('hidden') ? "Show More ↓" : "Show Less ↑";
+    }
   }
 </script>
 
