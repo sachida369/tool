@@ -63,110 +63,214 @@ Lost & Found Services – खोई हुई चीज़ें ढूँढन
 </style>
 
 <!-- Main Content -->
-<div class="mx-auto space-y-8 mt-6 px-4">
+<div class="mx-auto space-y-10 mt-6 px-4">
 
-  <!-- ROW 1 : Official Portals -->
+  <!-- ================= ROW 1 ================= -->
   <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+
+    <!-- Box 1 -->
     <div class="border p-4 rounded shadow bg-white">
       <h2 class="font-bold">Official Portals</h2>
-      <img src="assets/official-portals.jpg" alt="Official Portals" class="w-full h-24 object-cover my-2 rounded">
-      <div class="text-sm space-y-1" id="officialPortals">
-        <div>1. <a href="https://pfms.nic.in" target="_blank" class="text-blue-600">PFMS</a> – Finance Mgmt</div>
-        <div>2. <a href="https://hrms.indianrail.gov.in" target="_blank" class="text-blue-600">HRMS</a> – Railway Staff</div>
-        <div>3. <a href="https://ireps.gov.in" target="_blank" class="text-blue-600">IREPS</a> – Tenders</div>
-        <div>4. <a href="https://gem.gov.in" target="_blank" class="text-blue-600">GeM</a> – Procurement</div>
-        <div>5. <a href="https://irctc.co.in" target="_blank" class="text-blue-600">IRCTC</a> – Train & PNR</div>
-        <div>6. <a href="https://uidai.gov.in" target="_blank" class="text-blue-600">UIDAI</a> – Aadhaar</div>
-        <div>7. <a href="https://digilocker.gov.in" target="_blank" class="text-blue-600">DigiLocker</a> – Docs</div>
-        <div>8. <a href="https://eoffice.gov.in" target="_blank" class="text-blue-600">eOffice</a> – File Mgmt</div>
-        <div>9. <a href="https://epfindia.gov.in" target="_blank" class="text-blue-600">EPFO</a> – PF & Pension</div>
-        <div>10. <a href="https://sparrow.eoffice.gov.in" target="_blank" class="text-blue-600">SPARROW</a> – APAR</div>
+      <img src="assets/official-portals.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="https://pfms.nic.in" target="_blank">PFMS</a> – Finance Mgmt</div>
+        <div>2. <a href="https://hrms.indianrail.gov.in" target="_blank">HRMS</a> – Railway Staff</div>
+        <div>3. <a href="https://ireps.gov.in" target="_blank">IREPS</a> – Railway Tenders</div>
+        <div>4. <a href="https://gem.gov.in" target="_blank">GeM</a> – Govt e-Marketplace</div>
+        <div>5. <a href="https://irctc.co.in" target="_blank">IRCTC</a> – Train Ticket & PNR</div>
       </div>
-      <button onclick="toggleMore('officialPortals', this)" class="mt-2 bg-gray-800 text-white px-3 py-1 rounded">Show More ↓</button>
     </div>
-  </div>
 
-  <!-- ROW 2 : Software & Utilities -->
-  <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+    <!-- Box 2 -->
     <div class="border p-4 rounded shadow bg-white">
-      <h2 class="font-bold">Software & Utilities</h2>
-      <img src="assets/software-utilities.jpg" alt="Software" class="w-full h-24 object-cover my-2 rounded">
-      <div class="text-sm space-y-1" id="softwareTools">
-        <div>1. <a href="#" target="_blank" class="text-blue-600">DSC Signer 4.1.7</a> – eOffice RDSO</div>
-        <div>2. <a href="#" target="_blank" class="text-blue-600">DSC Signer 4.1.8</a> – Railway Board</div>
-        <div>3. <a href="#" target="_blank" class="text-blue-600">DSC Signer 7.0.2</a> – NIC Users</div>
-        <div>4. <a href="#" target="_blank" class="text-blue-600">Java 8</a> – Required for DSC</div>
-        <div>5. <a href="#" target="_blank" class="text-blue-600">Adobe Reader</a> – PDF Docs</div>
-        <div>6. <a href="#" target="_blank" class="text-blue-600">AnyDesk</a> – Remote Support</div>
-        <div>7. <a href="#" target="_blank" class="text-blue-600">TeamViewer</a> – Remote Access</div>
-        <div>8. <a href="#" target="_blank" class="text-blue-600">Sandes</a> – Govt Messenger</div>
-        <div>9. <a href="#" target="_blank" class="text-blue-600">NIC Mail</a> – Govt Email</div>
-        <div>10. <a href="#" target="_blank" class="text-blue-600">Kavach</a> – 2FA</div>
+      <h2 class="font-bold">eOffice Tools</h2>
+      <img src="assets/office-tools.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">DSC Signer 4.1.7</a> – For eOffice</div>
+        <div>2. <a href="#">DSC Signer 4.1.8</a> – Railway Board</div>
+        <div>3. <a href="#">DSC Signer 7.0.2</a> – NIC Users</div>
+        <div>4. <a href="#">Java 8</a> – Required for DSC</div>
+        <div>5. <a href="#">Adobe Reader</a> – PDF Docs</div>
       </div>
-      <button onclick="toggleMore('softwareTools', this)" class="mt-2 bg-gray-800 text-white px-3 py-1 rounded">Show More ↓</button>
     </div>
-  </div>
 
-  <!-- ROW 3 : Realtime Services -->
-  <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+    <!-- Box 3 -->
     <div class="border p-4 rounded shadow bg-white">
-      <h2 class="font-bold">Realtime Services</h2>
-      <img src="assets/realtime-services.jpg" alt="Realtime" class="w-full h-24 object-cover my-2 rounded">
-      <div class="text-sm space-y-1" id="realtime">
-        <div>1. <a href="https://enquiry.indianrail.gov.in/ntes/" target="_blank" class="text-blue-600">NTES</a> – Train Live</div>
-        <div>2. <a href="https://indianrail.gov.in/enquiry/PNR" target="_blank" class="text-blue-600">PNR Status</a> – Ticket Check</div>
-        <div>3. <a href="https://flightstats.com" target="_blank" class="text-blue-600">FlightStats</a> – Flights</div>
-        <div>4. <a href="https://indiapost.gov.in" target="_blank" class="text-blue-600">India Post</a> – Parcels</div>
-        <div>5. <a href="https://mausam.imd.gov.in" target="_blank" class="text-blue-600">IMD</a> – Weather</div>
-        <div>6. <a href="https://parivahan.gov.in" target="_blank" class="text-blue-600">Parivahan</a> – Vehicle Services</div>
-        <div>7. <a href="https://pgportal.gov.in" target="_blank" class="text-blue-600">CPGRAMS</a> – Grievances</div>
-        <div>8. <a href="https://services.ecourts.gov.in" target="_blank" class="text-blue-600">eCourts</a> – Case Status</div>
-        <div>9. <a href="https://bhulekh.up.nic.in" target="_blank" class="text-blue-600">Bhulekh</a> – Land Records</div>
-        <div>10. <a href="https://lostfound.gov.in" target="_blank" class="text-blue-600">Lost & Found</a> – Items</div>
+      <h2 class="font-bold">Daily Tools</h2>
+      <img src="assets/daily-tools.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">ILovePDF</a> – Merge PDFs</div>
+        <div>2. <a href="#">SmallPDF</a> – Compress PDFs</div>
+        <div>3. <a href="#">Remove.bg</a> – Remove Background</div>
+        <div>4. <a href="#">TinyPNG</a> – Image Reducer</div>
+        <div>5. <a href="#">Canva</a> – PPT / Design</div>
       </div>
     </div>
-  </div>
 
-  <!-- ROW 4 : Finance & HR -->
-  <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+    <!-- Box 4 -->
     <div class="border p-4 rounded shadow bg-white">
-      <h2 class="font-bold">Finance & HR</h2>
-      <img src="assets/finance-hr.jpg" alt="Finance" class="w-full h-24 object-cover my-2 rounded">
-      <div class="text-sm space-y-1" id="finance">
-        <div>1. <a href="https://gconnect.in" target="_blank" class="text-blue-600">DA/TA Calculator</a> – Allowance</div>
-        <div>2. <a href="https://incometaxindia.gov.in" target="_blank" class="text-blue-600">Income Tax</a> – IT Dept</div>
-        <div>3. <a href="https://npscra.nsdl.co.in" target="_blank" class="text-blue-600">NPS/GPF</a> – Retirement</div>
-        <div>4. <a href="https://epfindia.gov.in" target="_blank" class="text-blue-600">EPFO</a> – PF Portal</div>
-        <div>5. <a href="https://rbi.org.in" target="_blank" class="text-blue-600">RBI</a> – Central Bank</div>
-        <div>6. <a href="https://sebi.gov.in" target="_blank" class="text-blue-600">SEBI</a> – Securities</div>
-        <div>7. <a href="https://npci.org.in" target="_blank" class="text-blue-600">NPCI</a> – UPI & RuPay</div>
-        <div>8. <a href="https://gst.gov.in" target="_blank" class="text-blue-600">GST Portal</a> – Tax</div>
-        <div>9. <a href="https://mca.gov.in" target="_blank" class="text-blue-600">MCA21</a> – Corporate Affairs</div>
-        <div>10. <a href="https://nsdl.co.in" target="_blank" class="text-blue-600">NSDL</a> – Securities</div>
+      <h2 class="font-bold">Realtime</h2>
+      <img src="assets/realtime-services.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">NTES</a> – Train Running</div>
+        <div>2. <a href="#">PNR Status</a> – Check Ticket</div>
+        <div>3. <a href="#">FlightStats</a> – Flights</div>
+        <div>4. <a href="#">India Post</a> – Parcel Tracking</div>
+        <div>5. <a href="#">IMD</a> – Weather</div>
+      </div>
+    </div>
+
+    <!-- Box 5 -->
+    <div class="border p-4 rounded shadow bg-white">
+      <h2 class="font-bold">Finance</h2>
+      <img src="assets/finance-hr.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">DA/TA Calculator</a> – Allowances</div>
+        <div>2. <a href="#">Income Tax</a> – Calculator</div>
+        <div>3. <a href="#">EPFO</a> – PF Portal</div>
+        <div>4. <a href="#">NPCI</a> – UPI/RuPay</div>
+        <div>5. <a href="#">GST Portal</a> – Tax Filing</div>
       </div>
     </div>
   </div>
 
-  <!-- ROW 5 : Communication -->
+  <!-- ================= ROW 2 ================= -->
   <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+
+    <!-- Box 1 -->
     <div class="border p-4 rounded shadow bg-white">
       <h2 class="font-bold">Communication</h2>
-      <img src="assets/communication.jpg" alt="Communication" class="w-full h-24 object-cover my-2 rounded">
-      <div class="text-sm space-y-1" id="communication">
-        <div>1. <a href="https://sandes.gov.in" target="_blank" class="text-blue-600">Sandes</a> – Govt Chat</div>
-        <div>2. <a href="https://mail.gov.in" target="_blank" class="text-blue-600">NIC Mail</a> – Govt Email</div>
-        <div>3. <a href="https://kavach.mail.gov.in" target="_blank" class="text-blue-600">Kavach</a> – 2FA</div>
-        <div>4. <a href="https://webex.nic.in" target="_blank" class="text-blue-600">NIC Webex</a> – Meetings</div>
-        <div>5. <a href="https://teams.microsoft.com" target="_blank" class="text-blue-600">MS Teams</a> – Collaboration</div>
-        <div>6. <a href="https://zoom.us" target="_blank" class="text-blue-600">Zoom</a> – Video Calls</div>
-        <div>7. <a href="https://signal.org" target="_blank" class="text-blue-600">Signal</a> – Messaging</div>
-        <div>8. <a href="https://slack.com" target="_blank" class="text-blue-600">Slack</a> – Team Chat</div>
-        <div>9. <a href="https://telegram.org" target="_blank" class="text-blue-600">Telegram</a> – Groups</div>
-        <div>10. <a href="https://whatsapp.com" target="_blank" class="text-blue-600">WhatsApp</a> – Messaging</div>
+      <img src="assets/communication.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">Sandes</a> – Govt Messenger</div>
+        <div>2. <a href="#">NIC Mail</a> – Govt Email</div>
+        <div>3. <a href="#">Kavach</a> – 2FA Login</div>
+        <div>4. <a href="#">Webex</a> – Meetings</div>
+        <div>5. <a href="#">MS Teams</a> – Collaboration</div>
+      </div>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="border p-4 rounded shadow bg-white">
+      <h2 class="font-bold">Students</h2>
+      <img src="assets/students.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">NTA Exams</a> – Admit Card</div>
+        <div>2. <a href="#">SSC</a> – Result</div>
+        <div>3. <a href="#">UPSC</a> – Result</div>
+        <div>4. <a href="#">CBSE</a> – Marksheets</div>
+        <div>5. <a href="#">Scholarship</a> – NSP Portal</div>
+      </div>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="border p-4 rounded shadow bg-white">
+      <h2 class="font-bold">Lost & Found</h2>
+      <img src="assets/lost-found.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">Lost & Found</a> – Govt Portal</div>
+        <div>2. <a href="#">Police FIR</a> – Online</div>
+        <div>3. <a href="#">Railway Lost</a> – Items</div>
+        <div>4. <a href="#">DMRC</a> – Metro Lost</div>
+        <div>5. <a href="#">Airlines Lost</a> – Items</div>
+      </div>
+    </div>
+
+    <!-- Box 4 -->
+    <div class="border p-4 rounded shadow bg-white">
+      <h2 class="font-bold">Court & Law</h2>
+      <img src="assets/court.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">eCourts</a> – Case Status</div>
+        <div>2. <a href="#">Supreme Court</a> – Orders</div>
+        <div>3. <a href="#">High Court</a> – Cause List</div>
+        <div>4. <a href="#">District Court</a> – Cases</div>
+        <div>5. <a href="#">Police FIR</a> – Status</div>
+      </div>
+    </div>
+
+    <!-- Box 5 -->
+    <div class="border p-4 rounded shadow bg-white">
+      <h2 class="font-bold">Travel</h2>
+      <img src="assets/travel.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">IRCTC</a> – Trains</div>
+        <div>2. <a href="#">RedBus</a> – Buses</div>
+        <div>3. <a href="#">Indigo</a> – Flights</div>
+        <div>4. <a href="#">Air India</a> – Flights</div>
+        <div>5. <a href="#">Uber</a> – Taxi</div>
       </div>
     </div>
   </div>
 
+<!-- ================= ROW 3 ================= -->
+  <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+
+    <!-- Box 1 -->
+    <div class="border p-4 rounded shadow bg-white">
+      <h2 class="font-bold">Communication</h2>
+      <img src="assets/communication.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">Sandes</a> – Govt Messenger</div>
+        <div>2. <a href="#">NIC Mail</a> – Govt Email</div>
+        <div>3. <a href="#">Kavach</a> – 2FA Login</div>
+        <div>4. <a href="#">Webex</a> – Meetings</div>
+        <div>5. <a href="#">MS Teams</a> – Collaboration</div>
+      </div>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="border p-4 rounded shadow bg-white">
+      <h2 class="font-bold">Students</h2>
+      <img src="assets/students.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">NTA Exams</a> – Admit Card</div>
+        <div>2. <a href="#">SSC</a> – Result</div>
+        <div>3. <a href="#">UPSC</a> – Result</div>
+        <div>4. <a href="#">CBSE</a> – Marksheets</div>
+        <div>5. <a href="#">Scholarship</a> – NSP Portal</div>
+      </div>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="border p-4 rounded shadow bg-white">
+      <h2 class="font-bold">Lost & Found</h2>
+      <img src="assets/lost-found.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">Lost & Found</a> – Govt Portal</div>
+        <div>2. <a href="#">Police FIR</a> – Online</div>
+        <div>3. <a href="#">Railway Lost</a> – Items</div>
+        <div>4. <a href="#">DMRC</a> – Metro Lost</div>
+        <div>5. <a href="#">Airlines Lost</a> – Items</div>
+      </div>
+    </div>
+
+    <!-- Box 4 -->
+    <div class="border p-4 rounded shadow bg-white">
+      <h2 class="font-bold">Court & Law</h2>
+      <img src="assets/court.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">eCourts</a> – Case Status</div>
+        <div>2. <a href="#">Supreme Court</a> – Orders</div>
+        <div>3. <a href="#">High Court</a> – Cause List</div>
+        <div>4. <a href="#">District Court</a> – Cases</div>
+        <div>5. <a href="#">Police FIR</a> – Status</div>
+      </div>
+    </div>
+
+    <!-- Box 5 -->
+    <div class="border p-4 rounded shadow bg-white">
+      <h2 class="font-bold">Travel</h2>
+      <img src="assets/travel.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">IRCTC</a> – Trains</div>
+        <div>2. <a href="#">RedBus</a> – Buses</div>
+        <div>3. <a href="#">Indigo</a> – Flights</div>
+        <div>4. <a href="#">Air India</a> – Flights</div>
+        <div>5. <a href="#">Uber</a> – Taxi</div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -191,6 +295,143 @@ Lost & Found Services – खोई हुई चीज़ें ढूँढन
   }
 </script>
 
+  <!-- ================= ROW 4 ================= -->
+  <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+
+    <!-- Box 1 -->
+    <div class="border p-4 rounded shadow bg-white">
+      <h2 class="font-bold">Communication</h2>
+      <img src="assets/communication.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">Sandes</a> – Govt Messenger</div>
+        <div>2. <a href="#">NIC Mail</a> – Govt Email</div>
+        <div>3. <a href="#">Kavach</a> – 2FA Login</div>
+        <div>4. <a href="#">Webex</a> – Meetings</div>
+        <div>5. <a href="#">MS Teams</a> – Collaboration</div>
+      </div>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="border p-4 rounded shadow bg-white">
+      <h2 class="font-bold">Students</h2>
+      <img src="assets/students.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">NTA Exams</a> – Admit Card</div>
+        <div>2. <a href="#">SSC</a> – Result</div>
+        <div>3. <a href="#">UPSC</a> – Result</div>
+        <div>4. <a href="#">CBSE</a> – Marksheets</div>
+        <div>5. <a href="#">Scholarship</a> – NSP Portal</div>
+      </div>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="border p-4 rounded shadow bg-white">
+      <h2 class="font-bold">Lost & Found</h2>
+      <img src="assets/lost-found.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">Lost & Found</a> – Govt Portal</div>
+        <div>2. <a href="#">Police FIR</a> – Online</div>
+        <div>3. <a href="#">Railway Lost</a> – Items</div>
+        <div>4. <a href="#">DMRC</a> – Metro Lost</div>
+        <div>5. <a href="#">Airlines Lost</a> – Items</div>
+      </div>
+    </div>
+
+    <!-- Box 4 -->
+    <div class="border p-4 rounded shadow bg-white">
+      <h2 class="font-bold">Court & Law</h2>
+      <img src="assets/court.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">eCourts</a> – Case Status</div>
+        <div>2. <a href="#">Supreme Court</a> – Orders</div>
+        <div>3. <a href="#">High Court</a> – Cause List</div>
+        <div>4. <a href="#">District Court</a> – Cases</div>
+        <div>5. <a href="#">Police FIR</a> – Status</div>
+      </div>
+    </div>
+
+    <!-- Box 5 -->
+    <div class="border p-4 rounded shadow bg-white">
+      <h2 class="font-bold">Travel</h2>
+      <img src="assets/travel.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">IRCTC</a> – Trains</div>
+        <div>2. <a href="#">RedBus</a> – Buses</div>
+        <div>3. <a href="#">Indigo</a> – Flights</div>
+        <div>4. <a href="#">Air India</a> – Flights</div>
+        <div>5. <a href="#">Uber</a> – Taxi</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= ROW 5 ================= -->
+  <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+
+    <!-- Box 1 -->
+    <div class="border p-4 rounded shadow bg-white">
+      <h2 class="font-bold">Communication</h2>
+      <img src="assets/communication.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">Sandes</a> – Govt Messenger</div>
+        <div>2. <a href="#">NIC Mail</a> – Govt Email</div>
+        <div>3. <a href="#">Kavach</a> – 2FA Login</div>
+        <div>4. <a href="#">Webex</a> – Meetings</div>
+        <div>5. <a href="#">MS Teams</a> – Collaboration</div>
+      </div>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="border p-4 rounded shadow bg-white">
+      <h2 class="font-bold">Students</h2>
+      <img src="assets/students.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">NTA Exams</a> – Admit Card</div>
+        <div>2. <a href="#">SSC</a> – Result</div>
+        <div>3. <a href="#">UPSC</a> – Result</div>
+        <div>4. <a href="#">CBSE</a> – Marksheets</div>
+        <div>5. <a href="#">Scholarship</a> – NSP Portal</div>
+      </div>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="border p-4 rounded shadow bg-white">
+      <h2 class="font-bold">Lost & Found</h2>
+      <img src="assets/lost-found.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">Lost & Found</a> – Govt Portal</div>
+        <div>2. <a href="#">Police FIR</a> – Online</div>
+        <div>3. <a href="#">Railway Lost</a> – Items</div>
+        <div>4. <a href="#">DMRC</a> – Metro Lost</div>
+        <div>5. <a href="#">Airlines Lost</a> – Items</div>
+      </div>
+    </div>
+
+    <!-- Box 4 -->
+    <div class="border p-4 rounded shadow bg-white">
+      <h2 class="font-bold">Court & Law</h2>
+      <img src="assets/court.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">eCourts</a> – Case Status</div>
+        <div>2. <a href="#">Supreme Court</a> – Orders</div>
+        <div>3. <a href="#">High Court</a> – Cause List</div>
+        <div>4. <a href="#">District Court</a> – Cases</div>
+        <div>5. <a href="#">Police FIR</a> – Status</div>
+      </div>
+    </div>
+
+    <!-- Box 5 -->
+    <div class="border p-4 rounded shadow bg-white">
+      <h2 class="font-bold">Travel</h2>
+      <img src="assets/travel.jpg" class="w-full h-24 object-cover my-2 rounded">
+      <div class="text-sm space-y-1">
+        <div>1. <a href="#">IRCTC</a> – Trains</div>
+        <div>2. <a href="#">RedBus</a> – Buses</div>
+        <div>3. <a href="#">Indigo</a> – Flights</div>
+        <div>4. <a href="#">Air India</a> – Flights</div>
+        <div>5. <a href="#">Uber</a> – Taxi</div>
+      </div>
+    </div>
+  </div>
 
   
   <!-- Main Content -->
