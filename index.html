@@ -11,34 +11,12 @@
 
   
 
-
-    <!-- Navigation Buttons -->
-    <button id="prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black text-white px-2 py-1 rounded">‹</button>
-    <button id="next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black text-white px-2 py-1 rounded">›</button>
-  </div>
-</header>
-
-<script>
-  const slider = document.querySelector('.slider');
-  const slides = document.querySelectorAll('.slider img');
-  let index = 0;
-
-  function showSlide(i) {
-    index = (i + slides.length) % slides.length;
-    slider.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  document.getElementById('next').addEventListener('click', () => showSlide(index + 1));
-  document.getElementById('prev').addEventListener('click', () => showSlide(index - 1));
-
-  // Auto-slide every 5 seconds
-  setInterval(() => showSlide(index + 1), 5000);
-</script>
+  
 
 
   <!-- Ticker -->
-  <div class="bg-yellow-200 py-2 px-4">
-    <marquee>DA Hike 4% • PFMS downtime • HRMS new features • GST emSigner updated • DigiLocker hits 50M users</marquee>
+  <div class="bg-red-200 py-2 px-4">
+    <marquee>यह वेबसाइट सरकारी कर्मचारियों, रेलवे, PSU उपयोगकर्ताओं और छात्रों (Students) के लिए उपयोगी है। यहाँ सभी महत्वपूर्ण सरकारी पोर्टल्स के लिंक, ज़रूरी सॉफ़्टवेयर (DSC Signer, Java 8, Token Drivers) और उपयोगी टूल्स (Image Resizer, PDF Editor, PPT Maker, File Reducer) उपलब्ध हैं। साथ ही आप आवेदन स्थिति, फाइल ट्रैकिंग और ट्रेन PNR Status भी देख सकते हैं।</marquee>
   </div>
 
   <!-- Main Content -->
