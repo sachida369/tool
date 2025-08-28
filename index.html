@@ -9,54 +9,7 @@
 </head>
 <body>
 
-  <!-- Masthead -->
-<header class="py-4 px-6 border-b-4 border-black text-center">
-  <div class="flex flex-col items-center text-sm mb-2">
-    <span id="date" class="mb-1"></span>
-    <span class="italic">The Digital Gazette for Government Employees</span>
-    <input id="search" type="text" placeholder="Search..." 
-           class="px-2 py-1 border rounded text-black mt-2">
-  </div>
-
-  <div class="masthead text-2xl font-bold">Ek-Drishti GovTool</div>
-
-  <!-- Slider Section -->
-  <div class="relative w-full aspect-[10/1] overflow-hidden mt-2">
-    <div class="slider flex w-full transition-transform duration-700 ease-in-out">
-      <!-- Slide 1 -->
-      <div class="w-full flex-shrink-0">
-        <img src="assets/header-banner-ad.jpg" alt="Banner 1" class="w-full h-full object-cover">
-      </div>
-      <!-- Slide 2 -->
-      <div class="w-full flex-shrink-0">
-        <img src="assets/finance-hr.jpg" alt="Banner 2" class="w-full h-full object-cover">
-      </div>
-      <!-- Slide 3 -->
-      <div class="w-full flex-shrink-0">
-        <img src="assets/office-tools.jpg" alt="Banner 3" class="w-full h-full object-cover">
-      </div>
-      <!-- Slide 4 -->
-      <div class="w-full flex-shrink-0">
-        <img src="assets/realtime-services.jpg" alt="Banner 4" class="w-full h-full object-cover">
-      </div>
-    </div>
-  </div>
-</header>
-
-<script>
-  const slider = document.querySelector('.slider');
-  const slides = document.querySelectorAll('.slider > div');
-  let index = 0;
-
-  function showSlide(i) {
-    index = (i + slides.length) % slides.length;
-    slider.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  // Auto-slide every 5s
-  setInterval(() => showSlide(index + 1), 5000);
-</script>
-
+  
 
 
     <!-- Navigation Buttons -->
